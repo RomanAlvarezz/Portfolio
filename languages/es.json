@@ -1,0 +1,42 @@
+{
+    "nav":{
+        "home": "inicio",
+        "about": "sobre mí",
+        "proyects": "proyectos",
+        "contact": "contacto"
+    },
+    "home":{
+       "hi": "Hola soy",
+       "rol": "desarrollador web frontend +<br>estudiante de ingeniería en sistemas",
+       "cv" : "Curriculum"
+    },
+    "code-block":{
+        "id": "\"persona\"",
+        "name": "\"nombre\"",
+        "age": "\"edad\"",
+        "location": "\"ubicacion\"",
+        "likes": "\"gustos\"",
+        "like-1": "Natación",
+        "like-2": "Codear",
+        "like-3": "Diseño Web"
+    },
+    "about":{
+        "title": "Sobre mí",
+        "description":"Hola, mi nombre es Román Alvarez y soy desarrollador Front End autodidacta situado en Argentina. Mis primeras interacciones con código empezaron en sexto grado de secundaria (2020), programando microncontroladores con Arduino pero descubrí mi verdadera pasión por programar el año pasado cuando decidí estudiar ingeniería en sistemas en la Universidad Tecnológica Nacional (UTN) y también darle una oportunidad a el Bootcamp de Rollingcode. No fue fácil mantener al dia ambas carreras pero aprendí muchas cosas como algoritmos y estructuras de datos, programación lógica, diseño web y a trabajar en equipo con el método scrum. Estoy constantemente tratando de aprender nuevas tecnologías y conceptos. Disfruto trabajar con Javascript y actualmente estoy en busca de mi primera oportunidad laboral como Desarrollador Web.",
+        "subtitle": "Mis habilidades"
+    },
+    "proyects":{
+        "title": "Proyectos"
+    },
+    "contact":{
+        "title": "Contacto",
+        "subtitle": "Contactame o enviame un email directamente a <a href='mailto:alvarezroman150@gmai.com'>alvarezroman150@gmai.com</a>",
+        "name": "Nombre",
+        "email": "Correo",
+        "msg": "Mensaje",
+        "btn": "Enviar"
+    },
+    "footer":{
+        "title": "Diseñada & Construida por Román Alvarez"
+    }
+}

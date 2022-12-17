@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>SASS - Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="flags" id="flags">
+          <div class="flags__item hidden" data-language="es">
+            <img src="./assets/flag-arg.svg" class="flags__img" />
+          </div>
+          <div class="flags__item hidden" data-language="en">
+            <img src="./assets/flag-gb.svg" class="flags__img" />
+          </div>
+        </div>
+
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu" class="label-menu">
+          <span id="span-1"></span>
+          <span id="span-2"></span>
+          <span id="span-3"></span>
+        </label>
+
+        <ul class="nav-links">
+          <li class="hidden">
+            <a href="#home" data-section="nav" data-value="home">Home</a>
+          </li>
+          <li class="hidden">
+            <a href="#about" data-section="nav" data-value="about">About</a>
+          </li>
+          <li class="hidden">
+            <a href="#proyects" data-section="nav" data-value="proyects"
+              >Proyects</a
+            >
+          </li>
+          <li class="hidden">
+            <a href="#contact" data-section="nav" data-value="contact"
+              >Contact</a
+            >
+          </li>
+          <li class="icon-light-container hidden">
+            <img src="./assets/bxs-sun.svg" id="icon-light-mode" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-txt hidden">
+          <p data-section="home" data-value="hi" class="hi">Hello i'm</p>
+          <h1 class="name">Román<i class="fa-brands fa-github"></i></h1>
+          <p data-section="home" data-value="rol" class="rol">
+            CREATIVE WEB DEVELOPER
+          </p>
+          <div class="home-btns-container">
+            <button class="btn-CV" data-section="home" data-value="cv">
+              Resumé
+            </button>
+            <div class="home-btns">
+              <a
+                href="https://www.linkedin.com/in/romann-alvarez-49a3b720b/"
+                target="_blank"
+              >
+                <img src="./assets/linkedin.svg" />
+              </a>
+              <a href="https://github.com/RomanA86" target="_blank">
+                <img src="./assets/git.svg" />
+              </a>
+              <a href="mailto:alvarezroman150@gmai.com" target="_blank">
+                <img src="./assets/gmail.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-code hidden">
+          <pre class="code-txt">
+&lt;<div class="tag">article</div> <div class="attr">id=</div><div class="attr-value" data-section="code-block" data-value="id">"person"</div>&gt;
+      &lt;<div class="tag">h1</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="name">"name"</div>&gt;Román&lt;/<div class="tag">h1</div>&gt;
+      &lt;<div class="tag">h2</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="age">"age"</div>&gt;20&lt;/<div class="tag">h2</div>&gt;
+      &lt;<div class="tag">p</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="location">"location"</div>&gt;Argentina, Rosario&lt;/<div class="tag">p</div>&gt;
+              &lt;<div class="tag">ul</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="likes">"likes"</div>&gt;
+                      &lt;<div class="tag">li</div> &gt;<div class="code-txt-li" data-section="code-block" data-value="like-1">Swimming</div>&lt;/<div class="tag">li</div>&gt;
+                      &lt;<div class="tag">li</div> &gt;<div class="code-txt-li" data-section="code-block" data-value="like-2">Coding</div>&lt;/<div class="tag">li</div>&gt;
+                      &lt;<div class="tag">li</div> &gt;Pizza&lt;/<div class="tag">li</div>&gt;
+                      &lt;<div class="tag">li</div> &gt;<div class="code-txt-li" data-section="code-block" data-value="like-3">Web Design</div>&lt;/<div class="tag">li</div>&gt;
+              &lt;/<div class="tag">ul</div>&gt;
+&lt;/<div class="tag">article</div>&gt;
+</pre>
+        </div>
+        <img src="./assets/ola.svg" class="ola" />
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="fto-perfil-container hidden">
+        <div class="fto-perfil"></div>
+      </div>
+
+      <article class="about-text">
+        <h1 class="title hidden" data-section="about" data-value="title">About Me</h1>
+        <p class="sm-txt hidden" data-section="about" data-value="description">
+          Hi, my name is Roman Alvarez and I am a self-taught Front End Developer based in Argentina. My first interactions with code began on sixth grade of High School (2020), programming microcontrollers with Arduino but I discovered my truly passion for programming last year when I decided to study systems engineering at the National Technological University (UTN) and also give it a try to the bootcamp of Rollingcode. It wasn't easy to keep up to date with both carrers but I learned a lot of stuff such as algorithms and data  structures, logical programming, working in teams with the scurm method and web design. I'm constantly trying to learn new technologies and concepts. I enjoy working with Javascript and I'm currently looking for my first job oportunity as a web developer.
+        </p>
+
+        <h2 class="subtitle hidden" data-section="about" data-value="subtitle">
+          Tecnologias que uso
+        </h2>
+        <div class="skills">
+          <img src="./assets/html.svg" class="skill-icon hidden" />
+          <img src="./assets/css.svg" class="skill-icon hidden" />
+          <img src="./assets/figma2.svg" class="skill-icon hidden" />
+          <img src="./assets/js.svg" class="skill-icon hidden" />
+          <img src="./assets/sass.svg" class="skill-icon hidden" />
+        </div>
+      </article>
+    </section>
+
+    <section id="proyects">
+      <h1
+        class="title title-proyect hidden"
+        data-section="proyects"
+        data-value="title"
+      >
+        Proyects
+      </h1>
+      <div class="cards-container">
+        <div class="card hidden">
+          <div class="card-txt">
+            <h3 class="card-title">Proyect name</h3>
+            <p class="card-description">
+              Responsive intro section. proyect from drontendmentor.io
+            </p>
+            <div class="card-bot">
+              <p class="card-technologies">Javascript + CSS</p>
+              <div class="card-btn-container">
+                <a href="#" class="card-link"><img src="./assets/git.svg" /></a>
+                <a href="#" class="card-link"
+                  ><img src="./assets/external-link.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hidden">
+          <div class="card-txt">
+            <h3 class="card-title">Proyect name</h3>
+            <p class="card-description">
+              Responsive intro section. proyect from drontendmentor.io
+            </p>
+            <div class="card-bot">
+              <p class="card-technologies">Javascript + CSS</p>
+              <div class="card-btn-container">
+                <a href="#" class="card-link"><img src="./assets/git.svg" /></a>
+                <a href="#" class="card-link"
+                  ><img src="./assets/external-link.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card hidden">
+          <div class="card-txt">
+            <h3 class="card-title">Proyect name</h3>
+            <p class="card-description">
+              Responsive intro section. proyect from drontendmentor.io
+            </p>
+            <div class="card-bot">
+              <p class="card-technologies">Javascript + CSS</p>
+              <div class="card-btn-container">
+                <a href="#" class="card-link"><img src="./assets/git.svg" /></a>
+                <a href="#" class="card-link"
+                  ><img src="./assets/external-link.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1
+        class="title contact-title hidden"
+        data-section="contact"
+        data-value="title"
+      >
+        Contact
+      </h1>
+      <p
+        class="contact-description sm-txt hidden"
+        data-section="contact"
+        data-value="subtitle"
+      >
+        Get in touch or shoot me an email directly on
+        <a href="mailto:alvarezroman150@gmai.com">alvarezroman150@gmai.com</a>
+      </p>
+
+      <form
+        action="https://formsubmit.co/alvarezroman150@gmail.com"
+        method="POST"
+      >
+        <div class="form-top">
+          <div class="input-group hidden">
+            <label
+              for="name"
+              class="sm-txt"
+              data-section="contact"
+              data-value="name"
+              >Name</label
+            >
+            <input
+              name="name"
+              type="text"
+              id="name"
+              class="name-input"
+              required
+            />
+            <span class="border-bot"></span>
+          </div>
+          <div class="input-group hidden">
+            <label
+              for="name"
+              class="sm-txt"
+              data-section="contact"
+              data-value="email"
+              >Email</label
+            >
+            <input
+              name="email"
+              type="email"
+              id="email"
+              class="email-input"
+              required
+            />
+            <span class="border-bot"></span>
+          </div>
+        </div>
+        <div class="input-group hidden">
+          <label
+            for="msg"
+            class="sm-txt"
+            data-section="contact"
+            data-value="msg"
+            >Message</label
+          >
+          <textarea
+            class="msg-input"
+            name="message"
+            id="msg"
+            required
+          ></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="Tu Portafolio!" />
+        <input type="hidden" name="_template" value="table" />
+        <button class="btn-send hidden">
+          <p data-section="contact" data-value="btn">Send</p>
+          <img class="btn-send-icon" src="./assets/send.svg" />
+        </button>
+      </form>
+    </section>
+
+    <svg
+      class="waves"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28"
+      preserveAspectRatio="none"
+      shape-rendering="auto"
+    >
+      <defs>
+        <path
+          id="gentle-wave"
+          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        />
+      </defs>
+      <g class="parallax">
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="0"
+          fill="rgba(119, 107, 228, 0.7)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="3"
+          fill="rgba(109, 96, 231, 0.5)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="5"
+          fill="rgba(98, 83, 233, 0.3)"
+        />
+        <use
+          xlink:href="#gentle-wave"
+          x="48"
+          y="7"
+          fill="rgba(88, 71, 235,0.9)"
+        />
+      </g>
+    </svg>
+    <footer data-section="footer" data-value="title">
+      Design & Built by Román Alvarez
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
