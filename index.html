@@ -10,24 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="styles.css" />
 
     <title>SASS - Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <div class="flags" id="flags">
-          <div class="flags__item hidden" data-language="es">
-            <img src="./assets/flag-arg.svg" class="flags__img" />
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav__flags" id="flags">
+          <div class="nav__flag__item hidden" data-language="es">
+            <img src="./assets/flag-arg.svg" class="nav__flag__img" />
           </div>
-          <div class="flags__item hidden" data-language="en">
-            <img src="./assets/flag-gb.svg" class="flags__img" />
+          <div class="nav__flag__item hidden" data-language="en">
+            <img src="./assets/flag-gb.svg" class="nav__flag__img" />
           </div>
         </div>
 
@@ -38,24 +34,24 @@
           <span id="span-3"></span>
         </label>
 
-        <ul class="nav-links">
-          <li class="hidden">
+        <ul class="nav__list">
+          <li class="nav__link hidden">
             <a href="#home" data-section="nav" data-value="home">Home</a>
           </li>
-          <li class="hidden">
+          <li class="nav__link hidden">
             <a href="#about" data-section="nav" data-value="about">About</a>
           </li>
-          <li class="hidden">
+          <li class="nav__link hidden">
             <a href="#proyects" data-section="nav" data-value="proyects"
               >Proyects</a
             >
           </li>
-          <li class="hidden">
+          <li class="nav__link hidden">
             <a href="#contact" data-section="nav" data-value="contact"
               >Contact</a
             >
           </li>
-          <li class="icon-light-container hidden">
+          <li class="nav__link nav__link__icon hidden">
             <img src="./assets/bxs-sun.svg" id="icon-light-mode" />
           </li>
         </ul>
@@ -66,7 +62,7 @@
       <div class="home-container">
         <div class="home-txt hidden">
           <p data-section="home" data-value="hi" class="hi">Hello i'm</p>
-          <h1 class="name">Román<i class="fa-brands fa-github"></i></h1>
+          <h1 class="name" id="roman">Román<i class="fa-brands fa-github"></i></h1>
           <p data-section="home" data-value="rol" class="rol">
             CREATIVE WEB DEVELOPER
           </p>

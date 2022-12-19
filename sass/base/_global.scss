@@ -1,0 +1,67 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --fondo-body: #0f1424;
+  --fondo-navbar: #1c1f4a;
+  --letras: hsl(0, 0%, 90%);
+  --sombra-navbar: hsl(0, 0%, 0%, 0.3);
+  --primario: rgb(88, 71, 235);
+  --sky-blue: #56c2e6;
+  --orange: #ff8c66;
+  --green: #4acf81;
+  --red: #ff5c7c;
+  --violet: #7536d3;
+  --yellow: #f1c65b;
+  --filtro-perfil: linear-gradient(
+      hsl(236, 45%, 20%, 0.35),
+      hsl(236, 45%, 20%, 0.3)
+    ),
+    url(./assets/foto-cuadrada.jpg);
+}
+
+.light-mode {
+  --orange: hsl(10, 100%, 60%);
+  --sky-blue: hsl(200, 90%, 42%);
+  --fondo-body: #f9f9f9;
+  --fondo-navbar: #f9f9f9;
+  --sombra-navbar: hsl(0, 0%, 0%, 0.1);
+  --letras: #0f1424;
+  --filtro-perfil: linear-gradient(hsl(0, 0%, 90%, 0.2), hsl(0, 0%, 90%, 0.1)),
+    url(./assets/foto-cuadrada.jpg);
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(3px); 
+  transform: translateY(70px); 
+  transition: opacity 500ms ease-in,
+   filter 300ms ease-in, 
+   transform 600ms ease;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 72px;
+  background-color: var(--fondo-body);
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transition: all 200ms ease-out;
+  overflow-x: hidden;
+}
