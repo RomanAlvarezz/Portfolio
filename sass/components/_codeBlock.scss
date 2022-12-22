@@ -1,0 +1,35 @@
+.home__code {
+    transition-delay: 250ms;
+    background-color: var(--fondo-navbar);
+    border-radius: 35px;
+    padding: 27px 55px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25),
+      inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    &__txt{
+      font-size: 20px;
+      line-height: 1.5;
+      color: var(--letras);
+      font-weight: 400;
+    }
+  }
+  
+  .tag,
+  .attr,
+  .attr-value,
+  .home__code__txt__li {
+    display: inline-block;
+  }
+  
+  .tag {
+    color: var(--primario);
+  }
+  
+  .attr {
+    color: var(--sky-blue);
+  }
+  
+  .attr-value {
+    color: var(--orange);
+  }
+  

@@ -1,0 +1,36 @@
+.about{
+  &__text{
+    max-width: 550px;
+  }
+
+  &__title{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--letras);
+    margin-bottom: 20px;
+  }
+
+  &__subtitle{
+    margin: 25px 0 20px;
+    color: var(--letras);
+    font-size: 25px;   
+  }
+
+  &__skills{
+    display: flex;
+    gap: 30px;
+
+    &__icon{
+      width: 70px;
+    }
+  }
+}
+  
+$delay: 0;  
+
+@for $i from 1 through 5{
+  $delay: $delay + 50;
+  .about__skills__icon:nth-child(#{$i}){
+    transition-delay: #{$delay}ms;
+  }
+}

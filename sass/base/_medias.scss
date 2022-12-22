@@ -1,8 +1,6 @@
-@use '../components/nav';
-
 @media screen and (max-width: 1100px) {
     /* HOME (inicio) ------------------------------------------------------- */
-    .home-container {
+    .home__container {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -13,28 +11,26 @@
       padding: 70px 0;
     }
   
-    .home-txt p {
+    .home__txt p {
       padding-left: 0;
     }
   
-    .home-btns-container {
+    .home__btn__container {
       padding-left: 0;
     }
     /* HOME (fin) ------------------------------------------------------- */
   
     /* ABOUT (inicio) ------------------------------------------------------- */
   
-    #about {
+    .about {
       flex-direction: column;
       gap: 80px;
     }
   
-    .fto-perfil-container {
-      order: 1;
-    }
-    .fto-perfil-container {
+    .about__container{
       width: 320px;
       height: 320px;
+      order: 1;
     }
   
     /* ABOUT (fin) ------------------------------------------------------- */
@@ -93,53 +89,53 @@
     /* NAVBAR (fin)----------------------------------------------------- */
   
     /* HOME (inicio)------------------------------------------------------- */
-    .home-txt .name {
+    .home__txt .name {
       font-size: 100px;
     }
   
-    .home-txt p {
+    .home__txt p {
       font-size: 20px;
     }
   
-    .ola {
+    .home__ola {
       width: 80%;
     }
   
-    .container-code {
+    .home__code {
       border-radius: 35px;
       padding: 22px 47px;
     }
   
-    .code-txt {
+    .home__code__txt {
       font-size: 16px;
       line-height: 1.5;
     }
   
-    .btn-CV{
+    .home__btn{
       font-size: 16px;
       padding: 10px 20px;
     }
   
-    .home-btns a img {
+    .home__btn__group .home__link img {
       width: 35px;
       height: 35px;
     }
   
-    .btn-CV{
+    .home__btn{
       font-size: 20px;
     }
     /* HOME (fin) ----------------------------------------------------- */
   
     /* ABOUT (inicio) ----------------------------------------------------- */
-    .about-text {
+    .about__text {
       padding: 0 20px;
     }
   
-    .title {
+    .about__title {
       font-size: 45px;
     }
   
-    .subtitle {
+    .about__subtitle {
       text-align: center;
     }
   
@@ -147,7 +143,7 @@
       font-size: 16px;
     }
   
-    .skills {
+    .about__skills {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -155,7 +151,7 @@
       gap: 15px;
     }
   
-    .skill-icon {
+    .about__skills__icon {
       width: 70px;
     }
     /* ABOUT (fin) ----------------------------------------------------- */
@@ -209,40 +205,40 @@
   
     /* HOME (inicio) ------------------------------------------------------- */
     
-    .home-txt .name {
+    .home__txt .name {
       font-size: 80px;
     }
   
-    .home-txt p {
+    .home__txt p {
       font-size: 18px;
     }
     
-    .home-txt {
+    .home__txt {
       text-align: center;
       padding: 0 5px;
     }
   
-    .container-code {
+    .home__code {
       padding: 20px 35px;
     }
   
-    .code-txt {
+    .home__code__txt {
       font-size: 14px;
       line-height: 1.5;
     }
   
-    .home-btns-container {
+    .home__btn__container {
       justify-content: center;
     }
   
-    .home-btns-container {
+    .home__btn__container {
       gap: 20px;
     }
     /* HOME (fin) ------------------------------------------------------- */
   
     /* ABOUT (inicio) ------------------------------------------------------- */
   
-    .fto-perfil-container {
+    .about__container{
       width: 270px;
       height: 270px;
     }
@@ -266,32 +262,32 @@
   @media screen and (max-width: 385px) {
     /* HOME (inicio) ------------------------------------------------------- */
   
-    .home-txt .name {
+    .home__txt .name {
       font-size: 65px;
     }
   
-    .home-btns-container {
+    .home__btn__container {
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
   
-    .container-code {
+    .home__code {
       padding: 15px 30px;
     }
   
-    .code-txt {
+    .home__code__txt {
       font-size: 12px;
       line-height: 1.5;
     }
     /* HOME (inicio) ------------------------------------------------------- */
   
     /* ABOUT (inicio) ------------------------------------------------------- */
-    #about {
+    .about {
       gap: 50px;
     }
   
-    .fto-perfil-container {
+    .about__container{
       width: 200px;
       height: 200px;
     }
@@ -336,11 +332,11 @@
   @media screen and (max-width: 385px){
   /* HOME (inicio) ------------------------------------------------------- */
   
-  .container-code {
+  .home__code {
     padding: 13px 25px;
   }
   
-  .code-txt {
+  .home__code__txt {
     font-size: 11px;
   }
   

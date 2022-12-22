@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 
     <title>SASS - Portfolio</title>
   </head>
@@ -59,73 +59,95 @@
     </nav>
 
     <section class="home" id="home">
-      <div class="home-container">
-        <div class="home-txt hidden">
+      <div class="home__container">
+        <div class="home__txt hidden">
           <p data-section="home" data-value="hi" class="hi">Hello i'm</p>
-          <h1 class="name" id="roman">Román<i class="fa-brands fa-github"></i></h1>
+          <h1 class="name" id="roman">Román</h1>
           <p data-section="home" data-value="rol" class="rol">
             CREATIVE WEB DEVELOPER
           </p>
-          <div class="home-btns-container">
-            <button class="btn-CV" data-section="home" data-value="cv">
+          <div class="home__btn__container">
+            <button class="home__btn btn" data-section="home" data-value="cv">
               Resumé
             </button>
-            <div class="home-btns">
+            <div class="home__btn__group">
               <a
+                class="home__link"
                 href="https://www.linkedin.com/in/romann-alvarez-49a3b720b/"
                 target="_blank"
               >
                 <img src="./assets/linkedin.svg" />
               </a>
-              <a href="https://github.com/RomanA86" target="_blank">
+              <a
+                class="home__link"
+                href="https://github.com/RomanA86"
+                target="_blank"
+              >
                 <img src="./assets/git.svg" />
               </a>
-              <a href="mailto:alvarezroman150@gmai.com" target="_blank">
+              <a
+                class="home__link"
+                href="mailto:alvarezroman150@gmai.com"
+                target="_blank"
+              >
                 <img src="./assets/gmail.svg" />
               </a>
             </div>
           </div>
         </div>
 
-        <div class="container-code hidden">
-          <pre class="code-txt">
+        <div class="home__code hidden">
+          <pre class="home__code__txt">
 &lt;<div class="tag">article</div> <div class="attr">id=</div><div class="attr-value" data-section="code-block" data-value="id">"person"</div>&gt;
       &lt;<div class="tag">h1</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="name">"name"</div>&gt;Román&lt;/<div class="tag">h1</div>&gt;
       &lt;<div class="tag">h2</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="age">"age"</div>&gt;20&lt;/<div class="tag">h2</div>&gt;
       &lt;<div class="tag">p</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="location">"location"</div>&gt;Argentina, Rosario&lt;/<div class="tag">p</div>&gt;
               &lt;<div class="tag">ul</div> <div class="attr">class=</div><div class="attr-value" data-section="code-block" data-value="likes">"likes"</div>&gt;
-                      &lt;<div class="tag">li</div> &gt;<div class="code-txt-li" data-section="code-block" data-value="like-1">Swimming</div>&lt;/<div class="tag">li</div>&gt;
-                      &lt;<div class="tag">li</div> &gt;<div class="code-txt-li" data-section="code-block" data-value="like-2">Coding</div>&lt;/<div class="tag">li</div>&gt;
+                      &lt;<div class="tag">li</div> &gt;<div class="home__code__txt__li" data-section="code-block" data-value="like-1">Swimming</div>&lt;/<div class="tag">li</div>&gt;
+                      &lt;<div class="tag">li</div> &gt;<div class="home__code__txt__li" data-section="code-block" data-value="like-2">Coding</div>&lt;/<div class="tag">li</div>&gt;
                       &lt;<div class="tag">li</div> &gt;Pizza&lt;/<div class="tag">li</div>&gt;
-                      &lt;<div class="tag">li</div> &gt;<div class="code-txt-li" data-section="code-block" data-value="like-3">Web Design</div>&lt;/<div class="tag">li</div>&gt;
+                      &lt;<div class="tag">li</div> &gt;<div class="home__code__txt__li" data-section="code-block" data-value="like-3">Web Design</div>&lt;/<div class="tag">li</div>&gt;
               &lt;/<div class="tag">ul</div>&gt;
 &lt;/<div class="tag">article</div>&gt;
 </pre>
         </div>
-        <img src="./assets/ola.svg" class="ola" />
+        <img src="./assets/ola.svg" class="home__ola" />
       </div>
     </section>
 
-    <section id="about">
-      <div class="fto-perfil-container hidden">
-        <div class="fto-perfil"></div>
+    <section id="about" class="about">
+      <div class="about__container hidden">
+        <div class="about__fto"></div>
       </div>
 
-      <article class="about-text">
-        <h1 class="title hidden" data-section="about" data-value="title">About Me</h1>
+      <article class="about__text">
+        <h1 class="about__title hidden" data-section="about" data-value="title">
+          About Me
+        </h1>
         <p class="sm-txt hidden" data-section="about" data-value="description">
-          Hi, my name is Roman Alvarez and I am a self-taught Front End Developer based in Argentina. My first interactions with code began on sixth grade of High School (2020), programming microcontrollers with Arduino but I discovered my truly passion for programming last year when I decided to study systems engineering at the National Technological University (UTN) and also give it a try to the bootcamp of Rollingcode. It wasn't easy to keep up to date with both carrers but I learned a lot of stuff such as algorithms and data  structures, logical programming, working in teams with the scurm method and web design. I'm constantly trying to learn new technologies and concepts. I enjoy working with Javascript and I'm currently looking for my first job oportunity as a web developer.
+          Hi, my name is Roman Alvarez and I am a self-taught Front End
+          Developer based in Argentina. My first interactions with code began on
+          sixth grade of High School (2020), programming microcontrollers with
+          Arduino but I discovered my truly passion for programming last year
+          when I decided to study systems engineering at the National
+          Technological University (UTN) and also give it a try to the bootcamp
+          of Rollingcode. It wasn't easy to keep up to date with both carrers
+          but I learned a lot of stuff such as algorithms and data structures,
+          logical programming, working in teams with the scurm method and web
+          design. I'm constantly trying to learn new technologies and concepts.
+          I enjoy working with Javascript and I'm currently looking for my first
+          job oportunity as a web developer.
         </p>
 
-        <h2 class="subtitle hidden" data-section="about" data-value="subtitle">
+        <h2 class="about__subtitle hidden" data-section="about" data-value="subtitle">
           Tecnologias que uso
         </h2>
-        <div class="skills">
-          <img src="./assets/html.svg" class="skill-icon hidden" />
-          <img src="./assets/css.svg" class="skill-icon hidden" />
-          <img src="./assets/figma2.svg" class="skill-icon hidden" />
-          <img src="./assets/js.svg" class="skill-icon hidden" />
-          <img src="./assets/sass.svg" class="skill-icon hidden" />
+        <div class="about__skills">
+          <img src="./assets/html.svg" class="about__skills__icon hidden" />
+          <img src="./assets/css.svg" class="about__skills__icon hidden" />
+          <img src="./assets/figma2.svg" class="about__skills__icon hidden" />
+          <img src="./assets/js.svg" class="about__skills__icon hidden" />
+          <img src="./assets/sass.svg" class="about__skills__icon hidden" />
         </div>
       </article>
     </section>
