@@ -107,7 +107,7 @@ body {
 
 /* HOME (fin) ---------------------------------------------------- */
 
-/* ABOUT (inicio) ------------------------------------------------- */
+/* ABOUT (inicio) ------------------------------------------------ */
 
 .about {
   scroll-margin-top: 30px;
@@ -120,3 +120,33 @@ body {
 }
 
 /* ABOUT (fin) ------------------------------------------------- */
+
+/* PROYECTS (inicio) ------------------------------------------- */
+
+.proyects{
+  min-height: 100vh;
+  padding-bottom: 50px;
+  background-image: url(../../assets/proyect-fondo-2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.title-proyect {
+  padding-top: 40px;
+}
+
+.cards-container {
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+/* PROYECTS (fin) ------------------------------------------- */
