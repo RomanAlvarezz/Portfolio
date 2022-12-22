@@ -129,7 +129,7 @@ body {
   gap: 80px;
 }
 
-.title-proyect {
+.proyects__title {
   padding-top: 40px;
 }
 
@@ -483,6 +483,42 @@ body {
   background-position: center center;
   outline-offset: -0.5px;
 }
+.card:hover {
+  outline: solid 2px var(--primario);
+  box-shadow: 0 5px 10px hsla(246deg, 80%, 60%, 0.4), inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+.card__txt {
+  background-color: var(--fondo-navbar);
+  border-radius: 15px;
+  padding: 20px;
+  border-bottom: solid 5px var(--primario);
+}
+.card__title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.card__description {
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+.card__bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.card__technologies {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: var(--sky-blue);
+}
+.card__link img {
+  width: 28px;
+}
+.card__link img:hover {
+  filter: contrast(200%);
+}
 
 .card:nth-child(1) {
   transition-delay: 250ms;
@@ -494,50 +530,6 @@ body {
 
 .card:nth-child(3) {
   transition-delay: 650ms;
-}
-
-.card:hover {
-  outline: solid 2px var(--primario);
-  box-shadow: 0 5px 10px hsla(246deg, 80%, 60%, 0.4), inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card-txt {
-  background-color: var(--fondo-navbar);
-  border-radius: 15px;
-  padding: 20px;
-  border-bottom: solid 5px var(--primario);
-}
-
-.card-title {
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
-.card-description {
-  margin-bottom: 5px;
-  font-weight: 300;
-}
-
-.card-bot {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.card-technologies {
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  color: var(--sky-blue);
-}
-
-.card-link img {
-  width: 28px;
-}
-
-.card-link img:hover {
-  filter: contrast(200%);
 }
 
 @media screen and (max-width: 1100px) {
@@ -570,10 +562,10 @@ body {
   }
   /* ABOUT (fin) ------------------------------------------------------- */
   /* PROYECT (inicio) ------------------------------------------------------- */
-  #proyects {
+  .proyects {
     gap: 40px;
   }
-  .title-proyect {
+  .proyects__title {
     padding-top: 100px;
   }
   .cards-container {
@@ -779,21 +771,21 @@ body {
   .card {
     height: 225px;
   }
-  .card-txt {
+  .card__txt {
     padding: 18px;
   }
-  .card-title {
+  .card__title {
     font-size: 18px;
     margin-bottom: 15px;
   }
-  .card-description {
+  .card__description {
     font-size: 14px;
     margin-bottom: 2px;
   }
-  .card-technologies {
+  .card__technologies {
     font-size: 12px;
   }
-  .card-link img {
+  .card__link img {
     width: 24px;
   }
   /* PROYECTS  (fin) ---------------------------------------------------*/

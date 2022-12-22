@@ -36,11 +36,11 @@
     /* ABOUT (fin) ------------------------------------------------------- */
   
     /* PROYECT (inicio) ------------------------------------------------------- */
-    #proyects {
+    .proyects {
       gap: 40px;
     }
   
-    .title-proyect {
+    .proyects__title {
       padding-top: 100px;
     }
   
@@ -298,25 +298,25 @@
       height: 225px;
     }
   
-    .card-txt {
+    .card__txt {
       padding: 18px;
     }
   
-    .card-title {
+    .card__title {
       font-size: 18px;
       margin-bottom: 15px;
     }
   
-    .card-description {
+    .card__description {
       font-size: 14px;
       margin-bottom: 2px;
     }
   
-    .card-technologies {
+    .card__technologies {
       font-size: 12px;
     }
   
-    .card-link img {
+    .card__link img {
       width: 24px;
     }
     /* PROYECTS  (fin) ---------------------------------------------------*/
