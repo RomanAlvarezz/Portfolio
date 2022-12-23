@@ -78,7 +78,7 @@ body {
   color: var(--letras);
 }
 
-/* HOME (inicio) ---------------------------------------------------- */
+/* HOME ---------------------------------------------------- */
 .home {
   width: 100%;
   scroll-margin-top: 72px;
@@ -102,7 +102,6 @@ body {
   width: 60vw;
 }
 
-/* HOME (fin) ---------------------------------------------------- */
 /* ABOUT (inicio) ------------------------------------------------ */
 .about {
   scroll-margin-top: 30px;
@@ -114,8 +113,7 @@ body {
   gap: 70px;
 }
 
-/* ABOUT (fin) ------------------------------------------------- */
-/* PROYECTS (inicio) ------------------------------------------- */
+/* PROYECTS ------------------------------------------- */
 .proyects {
   min-height: 100vh;
   padding-bottom: 50px;
@@ -142,8 +140,7 @@ body {
   gap: 80px;
 }
 
-/* PROYECTS (fin) ------------------------------------------- */
-/* CONTACT (inicio) ------------------------------------------- */
+/* CONTACT ------------------------------------------- */
 .contact {
   padding-top: 50px;
   padding-bottom: 100px;
@@ -170,7 +167,40 @@ body {
   color: var(--sky-blue);
 }
 
-/* CONTACT (fin) ------------------------------------------- */
+.btn, .btn-send {
+  background-color: transparent;
+  color: var(--primario);
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: solid 2px var(--primario);
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.btn:hover, .btn-send:hover {
+  color: hsl(0deg, 0%, 90%);
+  background-color: var(--primario);
+  box-shadow: 0 2px 50px hsla(246deg, 80%, 60%, 0.4);
+}
+
+.btn-send {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.btn-send-icon {
+  transition: all 250ms ease-in-out;
+}
+
+.btn-send:hover .btn-send-icon {
+  filter: brightness(5);
+}
+
 /* NAVBAR (inicio) ---------------------------------------------------- */
 .nav {
   position: fixed;
@@ -351,27 +381,9 @@ body {
   align-items: center;
   gap: 40px;
 }
-.home__btn {
-  font-size: 22px;
-  padding: 12px 22px;
-  border-radius: 10px;
-  border: solid 2px var(--primario);
-  cursor: pointer;
-  outline-offset: -1px;
-  background-color: transparent;
-  color: var(--primario);
-  overflow: hidden;
-  transition: all 250ms ease-in-out;
-  position: relative;
-}
 .home__btn__group {
   display: flex;
   gap: 15px;
-}
-.home__btn:hover {
-  color: hsl(0deg, 0%, 90%);
-  background-color: var(--primario);
-  box-shadow: 0 2px 50px hsla(246deg, 80%, 60%, 0.4);
 }
 .home__link img {
   width: 45px;
@@ -631,40 +643,8 @@ textarea:focus {
   box-shadow: 0 0px 1px 5px rgba(88, 71, 235, 0.4);
 }
 
-.btn-send {
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  font-size: 20px;
-  padding: 12px 22px;
-  border-radius: 10px;
-  border: solid 2px var(--primario);
-  cursor: pointer;
-  outline-offset: -1px;
-  background-color: transparent;
-  color: var(--primario);
-  overflow: hidden;
-  transition: all 250ms ease-in-out;
-}
-
-.btn-send:hover {
-  color: hsl(0deg, 0%, 90%);
-  background-color: var(--primario);
-  box-shadow: 0 2px 50px hsla(246deg, 80%, 60%, 0.4);
-}
-
-.btn-send-icon {
-  transition: all 250ms ease-in-out;
-}
-
-.btn-send:hover .btn-send-icon {
-  filter: brightness(5);
-}
-
 @media screen and (max-width: 1100px) {
-  /* HOME (inicio) ------------------------------------------------------- */
+  /* HOME ------------------------------------------------------- */
   .home__container {
     flex-direction: column;
     justify-content: center;
@@ -680,8 +660,7 @@ textarea:focus {
   .home__btn__container {
     padding-left: 0;
   }
-  /* HOME (fin) ------------------------------------------------------- */
-  /* ABOUT (inicio) ------------------------------------------------------- */
+  /* ABOUT ------------------------------------------------------ */
   .about {
     flex-direction: column;
     gap: 80px;
@@ -691,8 +670,7 @@ textarea:focus {
     height: 320px;
     order: 1;
   }
-  /* ABOUT (fin) ------------------------------------------------------- */
-  /* PROYECT (inicio) ------------------------------------------------------- */
+  /* PROYECT (inicio) ------------------------------------------- */
   .proyects {
     gap: 40px;
   }
@@ -702,10 +680,16 @@ textarea:focus {
   .cards-container {
     padding-bottom: 100px;
   }
-  /* PROYECT (fin) ------------------------------------------------------- */
 }
 @media screen and (max-width: 576px) {
-  /* NAVBAR (inicio) ----------------------------------------------------- */
+  .btn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .btn-send {
+    font-size: 18px;
+  }
+  /* NAVBAR ----------------------------------------------------- */
   body {
     padding-top: 65px;
   }
@@ -734,8 +718,7 @@ textarea:focus {
   #btn-menu:checked ~ .nav__list {
     height: calc(100vh - 71px);
   }
-  /* NAVBAR (fin)----------------------------------------------------- */
-  /* HOME (inicio)------------------------------------------------------- */
+  /* HOME ------------------------------------------------------- */
   .home__txt .name {
     font-size: 100px;
   }
@@ -753,19 +736,11 @@ textarea:focus {
     font-size: 16px;
     line-height: 1.5;
   }
-  .home__btn {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
   .home__btn__group .home__link img {
     width: 35px;
     height: 35px;
   }
-  .home__btn {
-    font-size: 20px;
-  }
-  /* HOME (fin) ----------------------------------------------------- */
-  /* ABOUT (inicio) ----------------------------------------------------- */
+  /* ABOUT ----------------------------------------------------- */
   .about__text {
     padding: 0 20px;
   }
@@ -788,8 +763,7 @@ textarea:focus {
   .about__skills__icon {
     width: 70px;
   }
-  /* ABOUT (fin) ----------------------------------------------------- */
-  /* PROYECT (inicio) ------------------------------------------------------- */
+  /* PROYECT (inicio) ----------------------------------------------------- */
   .cards-container {
     gap: 40px;
     padding: 0 10px 100px;
@@ -798,7 +772,6 @@ textarea:focus {
     width: 100%;
     max-width: 350px;
   }
-  /* PROYECT (fin) ------------------------------------------------------- */
   /* CONTACT (inicio) -----------------------------------------------------*/
   .contact__description {
     padding: 0 15px;
@@ -806,17 +779,16 @@ textarea:focus {
   .form__top {
     flex-direction: column;
   }
-  .btn-send {
-    padding: 10px 20px;
-  }
-  .form__input,
-  .btn-send {
+  .form__input {
     font-size: 16px;
   }
-  /* CONTACT (fin) -----------------------------------------------------*/
 }
 @media screen and (max-width: 480px) {
-  /* NAVBAR (inicio) ----------------------------------------------------- */
+  .btn-send {
+    margin-left: initial;
+    padding: 14px 22px;
+  }
+  /* NAVBAR ------------------------------------------------------------ */
   .nav__link a {
     font-size: 20px;
   }
@@ -824,8 +796,7 @@ textarea:focus {
     width: 25px;
     height: 25px;
   }
-  /* NAVBAR (fin) ------------------------------------------------------- */
-  /* HOME (inicio) ------------------------------------------------------- */
+  /* HOME -------------------------------------------------------------- */
   .home__txt .name {
     font-size: 80px;
   }
@@ -845,32 +816,26 @@ textarea:focus {
   }
   .home__btn__container {
     justify-content: center;
-  }
-  .home__btn__container {
     gap: 20px;
   }
-  /* HOME (fin) ------------------------------------------------------- */
-  /* ABOUT (inicio) ------------------------------------------------------- */
+  /* ABOUT ------------------------------------------------------------ */
   .about__container {
     width: 270px;
     height: 270px;
   }
-  /* ABOUT (fin) ------------------------------------------------------- */
-  /* OLAS(inicio) ------------------------------------- */
+  /* OLAS ------------------------------------------------------------- */
   .waves {
     height: 10vh;
     min-height: 50px;
     max-height: 50px;
   }
-  /* OLAS(fin) --------------------------------------- */
-  /*FOOTER (iniico)* -------------------------------------*/
+  /* FOOTER -------------------------------------------------------------*/
   footer {
     font-size: 10px;
   }
-  /*FOOTER (fin)* -------------------------------------*/
 }
 @media screen and (max-width: 385px) {
-  /* HOME (inicio) ------------------------------------------------------- */
+  /* HOME -------------------------------------------------------------- */
   .home__txt .name {
     font-size: 65px;
   }
@@ -886,8 +851,7 @@ textarea:focus {
     font-size: 12px;
     line-height: 1.5;
   }
-  /* HOME (inicio) ------------------------------------------------------- */
-  /* ABOUT (inicio) ------------------------------------------------------- */
+  /* ABOUT --------------------------------------------------------------- */
   .about {
     gap: 50px;
   }
@@ -895,8 +859,7 @@ textarea:focus {
     width: 200px;
     height: 200px;
   }
-  /* ABOUT (fin) ------------------------------------------------------- */
-  /* PROYECTS  (inicio) ---------------------------------------------------*/
+  /* PROYECTS ------------------------------------------------------------- */
   .card {
     height: 225px;
   }
@@ -917,22 +880,19 @@ textarea:focus {
   .card__link img {
     width: 24px;
   }
-  /* PROYECTS  (fin) ---------------------------------------------------*/
-  /* CONTACT  (inicio) ---------------------------------------------------*/
+  /* CONTACT ----------------------------------------------------------- */
   #contact {
     padding-bottom: 60px;
   }
-  /* CONTACT  (fin) ---------------------------------------------------*/
 }
 @media screen and (max-width: 385px) {
-  /* HOME (inicio) ------------------------------------------------------- */
+  /* HOME ---------------------------------------------------------------- */
   .home__code {
     padding: 13px 25px;
   }
   .home__code__txt {
     font-size: 11px;
   }
-  /* HOME (fin) ------------------------------------------------------- */
 }
 
 /*# sourceMappingURL=styles.css.map */

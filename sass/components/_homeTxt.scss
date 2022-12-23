@@ -34,31 +34,9 @@
         gap: 40px;
       }
 
-      &__btn{
-        font-size: 22px;
-        padding: 12px 22px;
-        border-radius: 10px;
-        border: solid 2px var(--primario);
-        cursor: pointer;
-        outline-offset: -1px;
-        background-color: transparent;
-        color: var(--primario);
-        overflow: hidden;
-        transition: all 250ms ease-in-out;
-        position: relative;
-      }
-
-
-
     &__btn__group{
         display: flex;
         gap: 15px; 
-    }
-
-    &__btn:hover{
-        color: hsl(0, 0%, 90%);
-        background-color: var(--primario);
-        box-shadow: 0 2px 50px hsl(246, 80%, 60%, 0.4);
     }
 
     &__link img{
