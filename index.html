@@ -217,29 +217,29 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact">
       <h1
-        class="title contact-title hidden"
+        class="title contact__title hidden"
         data-section="contact"
         data-value="title"
       >
         Contact
       </h1>
       <p
-        class="contact-description sm-txt hidden"
+        class="contact__description sm-txt hidden"
         data-section="contact"
         data-value="subtitle"
       >
         Get in touch or shoot me an email directly on
-        <a href="mailto:alvarezroman150@gmai.com">alvarezroman150@gmai.com</a>
+        <a href="mailto:alvarezroman150@gmai.com" class="contact__email">alvarezroman150@gmai.com</a>
       </p>
 
-      <form
+      <form class="form"
         action="https://formsubmit.co/alvarezroman150@gmail.com"
         method="POST"
       >
-        <div class="form-top">
-          <div class="input-group hidden">
+        <div class="form__top">
+          <div class="form__group hidden">
             <label
               for="name"
               class="sm-txt"
@@ -251,12 +251,12 @@
               name="name"
               type="text"
               id="name"
-              class="name-input"
+              class="form__name form__input"
               required
             />
-            <span class="border-bot"></span>
+            <span class="form__span"></span>
           </div>
-          <div class="input-group hidden">
+          <div class="form__group hidden">
             <label
               for="name"
               class="sm-txt"
@@ -268,13 +268,13 @@
               name="email"
               type="email"
               id="email"
-              class="email-input"
+              class="form__email form__input"
               required
             />
-            <span class="border-bot"></span>
+            <span class="form__span"></span>
           </div>
         </div>
-        <div class="input-group hidden">
+        <div class="form__group hidden">
           <label
             for="msg"
             class="sm-txt"
@@ -283,7 +283,7 @@
             >Message</label
           >
           <textarea
-            class="msg-input"
+            class="form__textarea form__input"
             name="message"
             id="msg"
             required

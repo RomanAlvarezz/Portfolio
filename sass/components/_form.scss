@@ -1,0 +1,103 @@
+.form {
+    max-width: 620px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  
+  .form__top {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form__top .form__group{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .form__span{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--primario);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: all 200ms ease-in-out;
+  }
+  
+  .form__group input:focus ~ .form__span{
+    transform: scaleX(1);
+  }
+  
+  .form__group label{
+    margin-bottom: 10px;
+    display: block;
+    padding-left: 12px;
+  }
+  
+  .form__name,
+  .form__email {
+    width: 100%;
+  }
+  
+  .form__input {
+    outline: 0;
+    color: var(--letras);
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    background: transparent;
+    border: solid 2px var(--primario);
+    transition: all 100ms ease-in-out;
+  }
+  
+  .form__textarea {
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  textarea:focus{
+    box-shadow: 0 0px 1px 5px #5847eb66;
+  }
+  
+  
+  .btn-send {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: solid 2px var(--primario);
+    cursor: pointer;
+    outline-offset: -1px;
+    background-color: transparent;
+    color: var(--primario);
+    overflow: hidden;
+    transition: all 250ms ease-in-out;
+  }
+  
+  .btn-send:hover {
+    color: hsl(0, 0%, 90%);
+    background-color: var(--primario);
+    box-shadow: 0 2px 50px hsl(246, 80%, 60%, 0.4);
+  }
+  
+  .btn-send-icon{
+    transition: all 250ms ease-in-out;
+  }
+  
+  .btn-send:hover .btn-send-icon{
+    filter: brightness(5);
+  }
