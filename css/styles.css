@@ -71,6 +71,11 @@ body {
   margin-bottom: 20px;
 }
 
+.subtitle {
+  font-size: 27px;
+  color: var(--letras);
+}
+
 .sm-txt {
   font-size: 20px;
   line-height: 1.4;
@@ -371,19 +376,15 @@ footer {
 
 /* NAVBAR (fin) ----------------------------------------------------- */
 .home__container {
-  padding-left: 10px;
   display: flex;
   align-items: center;
   gap: 40px;
 }
-.home__txt {
-  color: var(--letras);
-}
 .home__txt .name {
   font-size: 160px;
+  color: var(--letras);
 }
 .home__txt p {
-  font-size: 27px;
   padding-left: 10px;
 }
 .home__txt .rol {
@@ -448,16 +449,8 @@ footer {
 .about__text {
   max-width: 550px;
 }
-.about__title {
-  font-size: 50px;
-  font-weight: 700;
-  color: var(--letras);
-  margin-bottom: 20px;
-}
 .about__subtitle {
   margin: 25px 0 20px;
-  color: var(--letras);
-  font-size: 25px;
 }
 .about__skills {
   display: flex;
@@ -701,14 +694,14 @@ textarea:focus {
 }
 @media screen and (max-width: 1100px) {
   /* HOME ------------------------------------------------------- */
+  .home {
+    padding: 70px 0;
+  }
   .home__container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 80px;
-  }
-  .home {
-    padding: 70px 0;
   }
   .home__txt p {
     padding-left: 0;
@@ -738,11 +731,21 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 576px) {
+  /* GLOBAL ---------------------------------------------------- */
   .btn {
     font-size: 20px;
     padding: 10px 20px;
   }
   .btn-send {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+  .sm-txt {
     font-size: 18px;
   }
   /* NAVBAR ----------------------------------------------------- */
@@ -778,9 +781,6 @@ textarea:focus {
   .home__txt .name {
     font-size: 100px;
   }
-  .home__txt p {
-    font-size: 20px;
-  }
   .home__ola {
     width: 80%;
   }
@@ -792,7 +792,7 @@ textarea:focus {
     font-size: 16px;
     line-height: 1.5;
   }
-  .home__btn__group .home__link img {
+  .home__link img {
     width: 35px;
     height: 35px;
   }
@@ -800,20 +800,9 @@ textarea:focus {
   .about__text {
     padding: 0 20px;
   }
-  .about__title {
-    font-size: 45px;
-  }
-  .about__subtitle {
-    text-align: center;
-  }
-  .sm-txt {
-    font-size: 16px;
-  }
   .about__skills {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 15px;
   }
   .about__skills__icon {
@@ -840,9 +829,13 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 480px) {
+  /* GLOBAL -------------------------------------------------------------- */
   .btn-send {
     margin-left: initial;
     padding: 14px 22px;
+  }
+  .title, .subtitle {
+    text-align: center;
   }
   /* NAVBAR ------------------------------------------------------------ */
   .nav__link a {
@@ -853,15 +846,15 @@ textarea:focus {
     height: 25px;
   }
   /* HOME -------------------------------------------------------------- */
-  .home__txt .name {
-    font-size: 80px;
-  }
-  .home__txt p {
-    font-size: 18px;
-  }
   .home__txt {
     text-align: center;
     padding: 0 5px;
+  }
+  .home__txt .name {
+    font-size: 80px;
+  }
+  .home__txt .subtitle {
+    font-size: 18px;
   }
   .home__code {
     padding: 20px 35px;
@@ -878,6 +871,10 @@ textarea:focus {
   .about__container {
     width: 270px;
     height: 270px;
+  }
+  .about__skills {
+    justify-content: center;
+    align-items: center;
   }
   /* OLAS ------------------------------------------------------------- */
   .waves {

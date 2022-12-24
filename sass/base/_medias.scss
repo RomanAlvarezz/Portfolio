@@ -1,22 +1,25 @@
 @media screen and (max-width: 1100px) {
+
   /* HOME ------------------------------------------------------- */
-  .home__container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-  }
 
-  .home {
+  .home{
+
     padding: 70px 0;
-  }
 
-  .home__txt p {
-    padding-left: 0;
-  }
+    &__container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
 
-  .home__btn__container {
-    padding-left: 0;
+    &__txt p{
+      padding-left: 0;
+    }
+
+    &__btn__container{
+      padding-left: 0;
+    }
   }
 
   /* ABOUT ------------------------------------------------------ */
@@ -24,22 +27,22 @@
   .about {
     flex-direction: column;
     gap: 80px;
-  }
 
-  .about__container {
-    width: 320px;
-    height: 320px;
-    order: 1;
+    &__container{
+      width: 320px;
+      height: 320px;
+      order: 1;
+    }
   }
 
   /* PROYECT (inicio) ------------------------------------------- */
 
   .proyects {
     gap: 40px;
-  }
 
-  .proyects__title {
-    padding-top: 100px;
+    &__title{
+      padding-top: 100px;
+    }
   }
 
   .cards-container {
@@ -48,12 +51,27 @@
 }
 
 @media screen and (max-width: 576px) {
+
+  /* GLOBAL ---------------------------------------------------- */
+
   .btn {
     font-size: 20px;
     padding: 10px 20px;
   }
 
   .btn-send {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle{
+    font-size: 22px;
+  }
+
+  .sm-txt {
     font-size: 18px;
   }
 
@@ -95,61 +113,51 @@
 
   /* HOME ------------------------------------------------------- */
 
-  .home__txt .name {
-    font-size: 100px;
-  }
+  .home{
 
-  .home__txt p {
-    font-size: 20px;
-  }
+    &__txt .name{
+      font-size: 100px;
+    }
 
-  .home__ola {
-    width: 80%;
-  }
+    &__ola{
+      width: 80%;
+    }
 
-  .home__code {
-    border-radius: 35px;
-    padding: 22px 47px;
-  }
+    &__code{
+      border-radius: 35px;
+      padding: 22px 47px;
 
-  .home__code__txt {
-    font-size: 16px;
-    line-height: 1.5;
-  }
+      &__txt{
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
 
-  .home__btn__group .home__link img {
-    width: 35px;
-    height: 35px;
+    &__link img{
+      width: 35px;
+      height: 35px;
+    }
+
   }
 
   /* ABOUT ----------------------------------------------------- */
 
-  .about__text {
-    padding: 0 20px;
-  }
+  .about{
 
-  .about__title {
-    font-size: 45px;
-  }
+    &__text{
+      padding: 0 20px;
+    }
 
-  .about__subtitle {
-    text-align: center;
-  }
+    &__skills{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
 
-  .sm-txt {
-    font-size: 16px;
-  }
+      &__icon{
+        width: 70px;
+      }
+    }
 
-  .about__skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .about__skills__icon {
-    width: 70px;
   }
 
   /* PROYECT (inicio) ----------------------------------------------------- */
@@ -180,9 +188,16 @@
 }
 
 @media screen and (max-width: 480px) {
+
+/* GLOBAL -------------------------------------------------------------- */
+
   .btn-send {
     margin-left: initial;
     padding: 14px 22px;
+  }
+
+  .title, .subtitle{
+    text-align: center;
   }
 
   /* NAVBAR ------------------------------------------------------------ */
@@ -198,31 +213,36 @@
 
   /* HOME -------------------------------------------------------------- */
 
-  .home__txt .name {
-    font-size: 80px;
-  }
+  .home{
 
-  .home__txt p {
-    font-size: 18px;
-  }
+    &__txt{
 
-  .home__txt {
-    text-align: center;
-    padding: 0 5px;
-  }
+      text-align: center;
+      padding: 0 5px;
 
-  .home__code {
-    padding: 20px 35px;
-  }
+      .name{
+        font-size: 80px;
+      }
 
-  .home__code__txt {
-    font-size: 14px;
-    line-height: 1.5;
-  }
+      .subtitle{
+        font-size: 18px;
+      }
+    }
 
-  .home__btn__container {
-    justify-content: center;
-    gap: 20px;
+    &__code{
+      padding: 20px 35px;
+
+      &__txt{
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+    &__btn__container{
+      justify-content: center;
+      gap: 20px;
+    }
+    
   }
 
   /* ABOUT ------------------------------------------------------------ */
@@ -230,6 +250,11 @@
   .about__container {
     width: 270px;
     height: 270px;
+  }
+
+  .about__skills {
+    justify-content: center;
+    align-items: center;
   }
 
   /* OLAS ------------------------------------------------------------- */
@@ -247,26 +272,29 @@
 }
 
 @media screen and (max-width: 385px) {
+
   /* HOME -------------------------------------------------------------- */
 
-  .home__txt .name {
+.home{
+  &__txt .name{
     font-size: 65px;
   }
 
-  .home__btn__container {
+  &__btn__container{
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .home__code {
+  &__code{
     padding: 15px 30px;
   }
 
-  .home__code__txt {
+  &__code__txt{
     font-size: 12px;
     line-height: 1.5;
   }
+}
 
   /* ABOUT --------------------------------------------------------------- */
   .about {
@@ -280,30 +308,30 @@
 
   /* PROYECTS ------------------------------------------------------------- */
 
-  .card {
+  .card{
     height: 225px;
-  }
 
-  .card__txt {
-    padding: 18px;
-  }
+    &__txt{
+      padding: 18px;
+    }
 
-  .card__title {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
+    &__title{
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
 
-  .card__description {
-    font-size: 14px;
-    margin-bottom: 2px;
-  }
+    &__description{
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
 
-  .card__technologies {
-    font-size: 12px;
-  }
+    &__technologies{
+      font-size: 12px;
+    }
 
-  .card__link img {
-    width: 24px;
+    &__link img{
+      width: 24px;
+    }
   }
 
   /* CONTACT ----------------------------------------------------------- */
