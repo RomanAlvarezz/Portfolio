@@ -20,11 +20,16 @@
           inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);  
     }
 
+    &:hover &__txt{
+        padding: 15px 20px; 
+    }
+
     &__txt{
         background-color: var(--fondo-navbar);
         border-radius: 15px;
         padding: 20px;
-        border-bottom: solid 5px var(--primario);   
+        border-bottom: solid 5px var(--primario);
+        transition: padding 500ms ease;
     }
 
     &__title{
