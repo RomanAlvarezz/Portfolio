@@ -26,7 +26,9 @@
         "subtitle": "My Skillset"
     },
     "proyects":{
-        "title": "Proyects"
+        "title": "Proyects",
+        "title-1": "Todo List",
+        "description-1": "Responsive Todo List with Local Storage and validations for inputs"
     },
     "contact":{
         "title": "Contact",

@@ -526,10 +526,22 @@ footer {
   color: var(--letras);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+  outline-offset: -0.5px;
+}
+.card:first-child {
+  background: url(../../assets/todolistscreen.png);
+  background-size: cover;
+  background-position: center center;
+}
+.card:nth-child(2) {
   background: url(../../assets/fondo-card-proyect.jpg);
   background-size: cover;
   background-position: center center;
-  outline-offset: -0.5px;
+}
+.card:last-child {
+  background: url(../../assets/fondo-card-proyect.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 .card:hover {
   outline: solid 2px var(--primario);
@@ -564,6 +576,9 @@ footer {
   font-size: 14px;
   letter-spacing: 0.5px;
   color: var(--sky-blue);
+}
+.card__link {
+  text-decoration: none;
 }
 .card__link img {
   width: 28px;
