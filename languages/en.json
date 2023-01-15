@@ -30,7 +30,9 @@
         "title-1": "Todo List",
         "description-1": "Responsive Todo List with Local Storage and validations for inputs",
         "title-2": "JS Calculator",
-        "description-2": "Calculator for basic operations"
+        "description-2": "Calculator for basic operations",
+        "title-3": "Password Generator",
+        "description-3": "The passwords have a lenght of 14 characters"
     },
     "contact":{
         "title": "Contact",

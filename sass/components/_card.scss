@@ -23,8 +23,8 @@
         background-position: center center;
     }
 
-    &:last-child{
-        background: url(../../assets/fondo-card-proyect.jpg);
+    &:nth-child(3){
+        background: url(../../assets/Password-Generator-screen.png);
         background-size: cover;
         background-position: center center;
     }
@@ -36,25 +36,29 @@
     }
 
     &:hover &__txt{
-        padding: 15px 20px; 
+        height: 55%; 
     }
 
     &__txt{
+        height: 60%;
         background-color: var(--fondo-navbar);
         border-radius: 15px;
-        padding: 20px;
+        padding: 15px 20px;
         border-bottom: solid 5px var(--primario);
-        transition: padding 500ms ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 500ms ease;
     }
 
     &__title{
         font-size: 22px;
         font-weight: 500;
-        margin-bottom: 20px;  
+        //margin-bottom: 20px;  
     }
 
     &__description {
-        margin-bottom: 5px;
+        //margin-bottom: 5px;
         font-weight: 300;
     }
 

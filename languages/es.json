@@ -30,7 +30,9 @@
         "title-1": "Lista de Tareas",
         "description-1": "Lista de Tareas responsive con Local Storage y validaciones para los inputs",
         "title-2": "Calculadora JS",
-        "description-2": "Calculadora para operaciones básicas"
+        "description-2": "Calculadora para operaciones básicas",
+        "title-3": "Generador de Contraseñas",
+        "description-3": "Las contraseñas tienen una longitud de 14 caracteres"
     },
     "contact":{
         "title": "Contacto",
