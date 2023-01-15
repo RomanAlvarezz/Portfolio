@@ -28,7 +28,9 @@
     "proyects":{
         "title": "Proyectos",
         "title-1": "Lista de Tareas",
-        "description-1": "Lista de Tareas responsive con Local Storage y validaciones para los inputs"
+        "description-1": "Lista de Tareas responsive con Local Storage y validaciones para los inputs",
+        "title-2": "Calculadora JS",
+        "description-2": "Calculadora para operaciones básicas"
     },
     "contact":{
         "title": "Contacto",
