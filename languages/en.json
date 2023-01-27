@@ -32,7 +32,9 @@
         "title-2": "JS Calculator",
         "description-2": "Calculator for basic operations",
         "title-3": "Password Generator",
-        "description-3": "The passwords have a lenght of 14 characters"
+        "description-3": "The passwords have a lenght of 14 characters",
+        "title-4": "Memory Game",
+        "description-4": "Responsive memory game"
     },
     "contact":{
         "title": "Contact",

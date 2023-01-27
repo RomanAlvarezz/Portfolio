@@ -543,6 +543,11 @@ footer {
   background-size: cover;
   background-position: center center;
 }
+.card:nth-child(4) {
+  background: url(../../assets/memory-game-screen.png);
+  background-size: cover;
+  background-position: center center;
+}
 .card:hover {
   outline: solid 2px var(--primario);
   box-shadow: 0 5px 10px hsla(246deg, 80%, 60%, 0.4), inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
