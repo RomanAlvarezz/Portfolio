@@ -8,8 +8,14 @@
   }
 
   &__skills{
+    background-color: var(--fondo-navbar);
+    border-radius: 15px;
+    padding: 15px;
     display: flex;
+    justify-content: center;
     gap: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25),
+      inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 
     &__icon{
       width: 70px;
