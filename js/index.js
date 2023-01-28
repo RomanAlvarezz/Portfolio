@@ -7,5 +7,5 @@ document.addEventListener('DOMContentLoaded', () => {
     lightMode('icon-light-mode');
     language('flags', '[data-section]');
     showElements('.hidden');
-    navAnimations('btn-menu', '.close');
+    navAnimations('btn-menu', '.nav' , '.close');
 })
