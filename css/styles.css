@@ -40,8 +40,8 @@
 .hidden {
   opacity: 0;
   filter: blur(3px);
-  transform: translateY(70px);
-  transition: opacity 500ms ease-in, filter 300ms ease-in, transform 600ms ease;
+  transform: translateY(100px);
+  transition: opacity 800ms ease-in, filter 500ms ease-in, transform 800ms ease;
 }
 
 .show {

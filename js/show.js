@@ -8,9 +8,7 @@ export default function showElements(hiddenEl){
             }
         })
     }
-    , {
-        threshold: 0.2
-    }
+    , { threshold: 0.2 }
     )
     
     hiddenElements.forEach(el => {
