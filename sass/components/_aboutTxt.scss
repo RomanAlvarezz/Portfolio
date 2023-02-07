@@ -59,8 +59,8 @@
 $delay: 0;  
 
 @for $i from 1 through 5{
-  $delay: $delay + 50;
-  .about__skills__icon:nth-child(#{$i}){
+  $delay: $delay + 100;
+  .about__skills__box:nth-child(#{$i}){
     transition-delay: #{$delay}ms;
   }
 }
