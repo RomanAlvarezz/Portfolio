@@ -31,8 +31,8 @@
         "description-1": "Responsive Todo List with Local Storage and validations for inputs",
         "title-2": "JS Calculator",
         "description-2": "Calculator for basic operations",
-        "title-3": "Password Generator",
-        "description-3": "The passwords have a lenght of 14 characters",
+        "title-3": "Rock Paper Scissors",
+        "description-3": "Rock Paper Scissors game against the computer with scores",
         "title-4": "Memory Game",
         "description-4": "This is a memory game based on the Scaloneta ⭐⭐⭐"
     },

@@ -190,6 +190,7 @@ footer {
 }
 
 .btn, .btn-send {
+  text-decoration: none;
   background-color: transparent;
   color: var(--primario);
   padding: 12px 22px;
@@ -573,7 +574,7 @@ footer {
   background-position: center center;
 }
 .card:nth-child(3) {
-  background: url(../../assets/Password-Generator-screen.png);
+  background: url(../../assets/Rock-Paper-Scissor-screen.png);
   background-size: cover;
   background-position: center center;
 }

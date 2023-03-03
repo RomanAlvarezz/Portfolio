@@ -31,8 +31,8 @@
         "description-1": "Lista de Tareas responsive con Local Storage y validaciones para los inputs",
         "title-2": "Calculadora JS",
         "description-2": "Calculadora para operaciones básicas",
-        "title-3": "Generador de Contraseñas",
-        "description-3": "Las contraseñas tienen una longitud de 14 caracteres",
+        "title-3": "Piedra, Papel o Tijeras",
+        "description-3": "Juego de piedra, papel  tijeras contra la computadora con puntuaciones",
         "title-4": "Juego de Memoria",
         "description-4": "Este es un juego de memoria basado en la Scaloneta ⭐⭐⭐"
     },
