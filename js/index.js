@@ -32,3 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // showElements('.hidden');
     navAnimations('btn-menu', '.nav' , '.close');
 })
+
+
