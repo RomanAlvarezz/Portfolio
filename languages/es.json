@@ -35,7 +35,7 @@
         "description-3": "Juego de piedra, papel  tijeras contra la computadora con puntuaciones",
         "title-4": "Juego de Memoria",
         "description-4": "Este es un juego de memoria basado en la Scaloneta ⭐⭐⭐",
-        "title-5": "Conversor de Monda",
+        "title-5": "Conversor de Moneda",
         "description-5": "Esta hecho con la API de <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y posee más de 100 monedas diferentes"
     },
     "contact":{
