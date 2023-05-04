@@ -1,0 +1,32 @@
+:root {
+    --body-bg: #0f1424;
+    --navbar-bg: #1c1f4a;
+    --navbar-bg-2: rgba(28, 31, 74, 0.725);
+    --letters: hsl(0, 0%, 90%);
+    --letters-dark: hsla(0, 0%, 100%, 0.4);
+    --navbar-shadow: hsl(0, 0%, 0%, 0.3);
+    --blue: rgb(88, 71, 235);
+    --sky-blue: #56c2e6;
+    --orange: #ff8c66;
+    --green: #4acf81;
+    --red: #ff5c7c;
+    --violet: #7536d3;
+    --yellow: #f1c65b;
+    --profile-filter: linear-gradient(
+        hsl(236, 45%, 20%, 0.35),
+        hsl(236, 45%, 20%, 0.3)
+      ),
+      url(./assets/foto-cuadrada.jpg);
+}
+
+.light-mode {
+    --orange: hsl(10, 100%, 60%);
+    --sky-blue: hsl(200, 90%, 42%);
+    --body-background: #f9f9f9;
+    --navbar-bg: #f9f9f9;
+    --navbar-bg-2: rgba(249, 249, 249, 0.725);
+    --navbar-shadow: hsl(0, 0%, 0%, 0.1);
+    --letters: #0f1424;
+    --profile-filter: linear-gradient(hsl(0, 0%, 90%, 0.2), hsl(0, 0%, 90%, 0.1)),
+      url(./assets/foto-cuadrada.jpg);
+}

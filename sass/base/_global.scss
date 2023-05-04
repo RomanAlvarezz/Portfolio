@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  position:relative;
+  background-color: var(--body-bg);
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  max-width: 1500px;
+}
+

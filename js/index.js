@@ -1,9 +1,22 @@
-import showElements from "./show.js";
-import language from "./language.js";
-import lightMode from "./lightMode.js";
-import navAnimations from "./menu.js";
+// import showElements from "./show.js";
+// import language from "./language.js";
+// import lightMode from "./lightMode.js";
+// import navAnimations from "./menu.js";
 
-const $loader = document.querySelector('.loader-bg');
+const d = document;
+
+d.addEventListener('click', e => {
+    console.log(e.target)
+    if (e.target.matches('.menu__buttons-bars') ||
+     e.target.matches('.menu__buttons-bars *')) {
+        d.querySelector('.menu__buttons-bars').classList.toggle('is-active');
+        d.querySelector('.menu__nav-mobile').classList.toggle('menu__nav-mobile-active');
+        return;
+    }
+
+})
+
+/*const $loader = document.querySelector('.loader-bg');
 let start = performance.now();
 
 function vanish(){
@@ -31,6 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     language('flags', '[data-section]');
     // showElements('.hidden');
     navAnimations('btn-menu', '.nav' , '.close');
-})
+})*/
 
 
