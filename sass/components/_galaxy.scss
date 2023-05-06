@@ -1,0 +1,294 @@
+.galaxy {
+
+    &__container{
+        //border: solid wheat 1px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1000px) {
+            align-items: center;
+        }
+    }
+
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform: scale(0.7);
+
+    @media (min-width: 350px) {
+        transform: scale(0.8);
+    }
+
+    @media (min-width: 400px) {
+        transform: scale(0.9);
+    }
+    
+    @media (min-width: 450px) {
+        transform: scale(1);
+    }
+    
+    @media (min-width: 500px) {
+        transform: scale(1.2);
+    }
+    
+    @media (min-width: 550px) {
+        transform: scale(1.3);
+    }
+    
+    @media (min-width: 600px) {
+        transform: scale(1.4);
+    }
+
+    @media (min-width: 650px) {
+        transform: scale(1.5);
+    }
+
+    @media (min-width: 1200px) {
+        transform: scale(1.6);
+    }
+
+    @media (min-width: 1500px) {
+        transform: scale(1.8);
+    }
+}
+
+.sun {
+    cursor: pointer;
+    z-index: 4;
+    width: 95px;
+    height: 95px;
+    font-size: 65px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(216, 216, 58);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 30ms ease-in-out;
+
+    &:active{
+        transform: translate(-50%,-50%) scale(0.9);
+    }
+
+    &-active {
+        outline: solid rgb(216, 216, 58) 2px;
+        outline-offset: 3px; 
+    }
+}
+
+.ring {
+    position: absolute;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+    animation-name: ring-rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    &__1 {
+        z-index: 3;
+        border-style: inset;
+        inset: 47px;
+        animation-duration: 5s;
+    }
+
+    &__2 {
+        z-index: 2;
+        border-style: dashed;
+        inset: 10px;
+        animation-duration: 10s;
+    }
+
+    &__3 {
+        border-style: outset;
+        inset: -25px;
+        animation-duration: 12s;
+    }
+}
+
+@keyframes ring-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.moon {
+    position: absolute;
+    left: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    z-index: 1;
+
+    &-active {
+        outline-offset: 3px;
+        outline-style: solid;
+        outline-width: 2px;
+    }
+
+    &__html {
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        outline-color: var(--orange);
+    }
+
+    &__css {
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        outline-color: #28adc4;
+    }
+
+    &__sass {
+        transform: translate(-50%, 50%);
+        background-color: var(--red); 
+        bottom: 0;
+        outline-color: var(--red);
+    }
+
+    &__github {
+        border-radius: 50%;
+        background-color: #000;
+        transform: translate(-50%, -50%);
+        outline-color: var(--green);
+    }
+
+    &__figma {
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        background-color: var(--violet);
+        outline-color: var(--violet);
+    }
+
+    &__sass, &__figma {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+
+        &::after {
+            display: none;
+            color: #000;
+            font-family: 'Ubuntu', sans-serif;
+            border-radius: 0 2px 2px 0;
+            padding: 3px;
+            box-sizing: content-box;
+            text-align: right;
+            position: absolute;
+            font-size: 13px;
+            font-weight: bold;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        }
+
+        &-active::after {
+            display: block;
+        }
+
+        &__html {
+            animation: moon-rotate 5s infinite linear;
+            background-color: var(--orange);
+        }
+
+        &__css {
+            animation: moon-rotate 10s infinite linear;
+            background-color: #28adc4; 
+        }
+
+        &__sass {
+            
+            animation: moon-rotate 10s infinite linear; 
+
+            img {
+                width: 100%;
+                display: block;
+                width: 25px;
+            }
+        }
+
+        &__github{
+            font-size: 28.32px;
+            color: var(--green);
+            animation: moon-rotate 12s infinite linear;
+        }
+
+        &__figma {
+            font-size: 22px;
+            color: #000;
+            animation: moon-rotate 12s infinite linear;
+        }
+
+        &__html, &__css{
+            border-radius: 50%;
+            padding-top: 2px;
+            font-size: 22px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__github, &__figma {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+
+
+        &__html::after {
+            width: 46px;
+            content: 'HTML';
+            background-color: var(--orange);
+        }
+
+
+        &__css::after {
+            width: 30px;
+            background-color: #28adc4;
+            content: 'CSS';
+        }
+    
+
+        &__sass::after {
+            width: 41px;
+            content: 'SASS';
+            background-color: var(--red);
+            left: calc(100% + 1px);
+        }
+    
+        &__github::after {
+            width: 61px;
+            content: 'GITHUB';
+            background-color: var(--green);
+        }
+
+        &__figma::after {
+            width: 54px;
+            content: 'FIGMA';
+            background-color: var(--violet);
+        }
+    }
+}
+
+ @keyframes moon-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}

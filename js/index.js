@@ -2,8 +2,13 @@
 // import language from "./language.js";
 // import lightMode from "./lightMode.js";
 // import navAnimations from "./menu.js";
+import Galaxy from './galaxy.js';
 
 const d = document;
+
+d.addEventListener('DOMContentLoaded', e => {
+    Galaxy();
+})
 
 d.addEventListener('click', e => {
     console.log(e.target)

@@ -39,20 +39,82 @@
                     </span>
                 </button>
             </div>
-
-            <nav class="menu__nav-mobile">
-              <a class="menu__nav-mobile__link" href="#">home</a>
-              <a class="menu__nav-mobile__link" href="#">about</a>
-              <a class="menu__nav-mobile__link" href="#">proyects</a>
-              <a class="menu__nav-mobile__link" href="#">contact</a>
-            </nav>
             
         </div>
     </header>
+    <nav class="menu__nav-mobile">
+        <a class="menu__nav-mobile__link" href="#">home</a>
+        <a class="menu__nav-mobile__link" href="#">about</a>
+        <a class="menu__nav-mobile__link" href="#">proyects</a>
+        <a class="menu__nav-mobile__link" href="#">contact</a>
+      </nav>
     <main>
-      <h1>Homrkpwfmke</h1>
+      <section class="section home">
+        <article class="home__texts__container">
+            <div class="home__texts">
+            <h3 class="home__hello">Hi, i'm</h3>
+            <h1 class="home__name">Román</h1>
+            <h3 class="home__description">frontend web developer +</h3>
+            <h3 class="home__description">systems analysis student</h3>
+            <div class="home__buttons">
+                <button class="home__buttons__resume">resumé</button>
+                <div class="home__buttons-group">
+                    <a href="#" class="home__buttons__social-media">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                    <a href="#" class="home__buttons__social-media">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="home__buttons__social-media">
+                        <i class="fa-solid fa-square-envelope"></i>
+                    </a>
+                </div>  
+            </div>
+            </div>
+        </article>
+        
+        <article class="galaxy__container">
+            <div class="galaxy">
+            <div class="ring ring__1">
+                <div class="moon moon__html">
+                        <i class="fa-brands fa-html5 moon__content moon__content__html"
+                        data-language="html"></i>
+                </div>
+            </div>
+            <div class="ring ring__2">
+                <div class="moon moon__css">
+                    <i class="fa-brands fa-css3-alt moon__content moon__content__css"
+                    data-language="css"></i>
+                </div>
+                <div class="moon moon__sass">
+                    <div class="moon__content moon__content__sass">
+                        <img src="./assets/sass.svg"
+                        data-language="sass"
+                        alt="icono sass">
+                    </div>
+                </div>
+            </div>
+            <div class="ring ring__3">
+                <div class="moon moon__github">
+                    <i class="fa-brands fa-github moon__content moon__content__github"
+                    data-language="github"></i>
+                </div>
+                <div class="moon moon__figma">
+                    <i class="fa-brands fa-figma moon__content moon__content__figma"
+                    data-language="figma"></i>
+                </div>
+            </div>
+            <div class="sun">
+                <i class="fa-brands fa-square-js sun__content"
+                ></i>
+            </div>
+            </div>
+        </article>
+        
+      </section>
+      <div class="cajita"></div>
     </main>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>
