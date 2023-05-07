@@ -5,7 +5,7 @@
   --letters: hsl(0, 0%, 90%);
   --letters-dark: hsla(0, 0%, 100%, 0.4);
   --navbar-shadow: hsl(0, 0%, 0%, 0.3);
-  --blue: rgb(88, 71, 235);
+  --blue: #5847eb;
   --sky-blue: #56c2e6;
   --orange: #ff8c66;
   --green: #4acf81;
@@ -387,12 +387,16 @@ header {
   text-transform: capitalize;
   padding: 15px 20px;
   border-radius: 30px;
-  outline: none;
-  border: solid var(--blue) 2px;
+  border: outset var(--blue) 2.5px;
   background-color: transparent;
   color: var(--blue);
   cursor: pointer;
   transition: all 200ms ease-in-out;
+}
+.home__buttons__resume:hover {
+  color: var(--letters);
+  background-color: var(--blue);
+  box-shadow: 0 2px 50px hsla(246deg, 80%, 60%, 0.4);
 }
 @media (min-width: 550px) {
   .home__buttons__resume {
@@ -404,10 +408,6 @@ header {
     padding: 20px 30px;
     border-radius: 40px;
   }
-}
-.home__buttons__resume:hover {
-  color: var(--letters);
-  background-color: var(--blue);
 }
 .home__buttons-group {
   display: flex;
