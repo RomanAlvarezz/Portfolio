@@ -106,10 +106,11 @@
         }
 
         &__resume {
+            font-weight: 500;
             font-size: 18px;
             text-transform: capitalize;
             padding: 15px 20px;
-            border-radius: 30px;
+            border-radius: 35px;
             border: outset var(--blue) 2.5px;
             background-color: transparent;
             color: var(--blue);
