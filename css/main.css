@@ -901,12 +901,12 @@ header {
 }
 .proyects__card__description {
   font-size: 15px;
-  line-height: 20px;
+  line-height: 23px;
 }
 @media (min-width: 800px) {
   .proyects__card__description {
     font-size: 16px;
-    line-height: 23px;
+    line-height: 25px;
   }
 }
 .proyects__card__bottom {
@@ -946,6 +946,125 @@ header {
 }
 .proyects__card__links a:last-child {
   color: var(--violet);
+}
+
+.contact {
+  padding-top: 200px;
+  text-align: center;
+}
+.contact__title {
+  color: var(--letters);
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+@media (min-width: 1000px) {
+  .contact__title {
+    font-size: 35px;
+  }
+}
+.contact__description {
+  color: var(--letters);
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+@media (min-width: 1000px) {
+  .contact__description {
+    font-size: 18px;
+  }
+}
+.contact__email {
+  color: var(--blue);
+}
+.contact__email:active {
+  color: var(--sky-blue);
+}
+
+.form {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.form__top {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+@media (min-width: 500px) {
+  .form__top {
+    flex-direction: row;
+  }
+}
+.form__group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  position: relative;
+}
+.form__group::after {
+  content: "";
+  border-radius: 3px;
+  height: 3.1px;
+  width: 100%;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: 0;
+  filter: brightness(0.7);
+}
+.form__label {
+  padding-left: 2px;
+  color: var(--letters);
+  font-weight: 500;
+  font-size: 17px;
+}
+@media (min-width: 1000px) {
+  .form__label {
+    font-size: 18px;
+  }
+}
+.form__input {
+  font-weight: 300;
+  color: var(--letters);
+  border-radius: 2.5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--navbar-bg);
+  font-size: 17px;
+}
+@media (min-width: 1000px) {
+  .form__input {
+    font-size: 18px;
+  }
+}
+.form__input:focus + .form__selected {
+  width: 100%;
+}
+.form__input-textarea {
+  height: 250px;
+  resize: none;
+}
+@media (min-width: 600px) {
+  .form__input-textarea {
+    height: 200px;
+  }
+}
+.form__selected {
+  border-radius: 3px;
+  height: 3px;
+  width: 0;
+  background-color: var(--blue);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  transition: 200ms cubic-bezier(0.47, 0, 0.745, 0.715) width;
 }
 
 /*# sourceMappingURL=main.css.map */

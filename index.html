@@ -19,14 +19,14 @@
         <div class="menu">
             <div class="menu__flags">
                 <img class="menu__flag" src="./assets/flag-arg.svg" alt="argentina flag">
-                <img class="menu__flag" src="./assets/flag-eng.svg" alt="england flag">
+                <img class="menu__flag menu__flag-active" src="./assets/flag-eng.svg" alt="england flag">
             </div>
 
             <nav class="menu__nav-desktop">
                 <a class="menu__nav-desktop__link" href="#">home</a>
                 <a class="menu__nav-desktop__link" href="#about">about</a>
                 <a class="menu__nav-desktop__link" href="#proyects">proyects</a>
-                <a class="menu__nav-desktop__link" href="#">contact</a>
+                <a class="menu__nav-desktop__link" href="#contact">contact</a>
             </nav>
             
             <div class="menu__buttons">
@@ -46,7 +46,7 @@
         <a class="menu__nav-mobile__link" href="#">home</a>
         <a class="menu__nav-mobile__link" href="#about">about</a>
         <a class="menu__nav-mobile__link" href="#proyects">proyects</a>
-        <a class="menu__nav-mobile__link" href="#">contact</a>
+        <a class="menu__nav-mobile__link" href="#contact">contact</a>
       </nav>
     <main>
       <section id="home" class="home">
@@ -293,6 +293,41 @@
                 </div>
             </article>
         </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h1 class="contact__title">Contact</h1>
+        <p class="contact__description">
+        Get in touch or shoot me an email directly on<br>
+          <a href="mailto:alvarezroman150@gmai.com" class="contact__email">
+            alvarezroman150@gmail.com
+          </a>
+        </p>
+        <form class="form">
+            <div class="form__top">
+                <div class="form__group">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" type="text" id="name">
+                    <span class="form__selected"></span>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="text" id="email">
+                    <span class="form__selected"></span>
+                </div> 
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="business">Business</label>
+                <input class="form__input" type="text" id="business">
+                <span class="form__selected"></span>
+            </div> 
+            <div class="form__group">
+                <label class="form__label" for="message">Message</label>
+                <!-- <input class="form__input" type="text" id="textarea"> -->
+                <textarea  id="message" class="form__input form__input-textarea"></textarea>
+                <span class="form__selected"></span>
+            </div> 
+        </form>
       </section>
       <div class="cajita"></div>
     </main>
