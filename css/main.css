@@ -448,12 +448,6 @@ header {
   color: var(--red);
 }
 
-.cajita {
-  width: 100%;
-  height: 600px;
-  background-color: var(--nav-bg);
-}
-
 .galaxy {
   width: 250px;
   height: 250px;
@@ -989,6 +983,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding-bottom: 50px;
 }
 .form__top {
   display: flex;
@@ -1070,7 +1065,7 @@ header {
 .form__button {
   margin-left: auto;
   width: 100px;
-  padding: 15px 0;
+  padding: 10px 0;
   border: outset var(--blue) 2.5px;
   outline: none;
   color: var(--blue);
@@ -1080,6 +1075,11 @@ header {
   font-size: 17px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
+}
+@media (min-width: 600px) {
+  .form__button {
+    padding: 15px 0;
+  }
 }
 @media (min-width: 1000px) {
   .form__button {
@@ -1092,6 +1092,58 @@ header {
 }
 .form__button:active {
   transform: scale(0.95);
+}
+
+.waves {
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  max-height: 100px;
+  margin-bottom: -4px;
+}
+
+.parallax > use {
+  animation: moveForever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes moveForever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+footer {
+  width: 100%;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(88, 71, 235);
 }
 
 /*# sourceMappingURL=main.css.map */
