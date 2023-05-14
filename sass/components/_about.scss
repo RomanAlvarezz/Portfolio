@@ -89,9 +89,8 @@
     }
     
     &:hover {
-          box-shadow: 0 2px 50px rgba(88, 71, 235, 0.2);
+        box-shadow: var(--profile-shadow);
         transform: translate(-2px, -2px);
-        opacity: 0.9;
       }
     }
 

@@ -63,7 +63,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgb(216, 216, 58);
+    background-color: var(--yellow);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@
     }
 
     &-active {
-        outline: solid rgb(216, 216, 58) 2px;
+        outline: solid var(--yellow) 2px;
         outline-offset: 3px; 
     }
 }
@@ -84,7 +84,7 @@
     position: absolute;
     border-radius: 50%;
     border-width: 2px;
-    border-color: white;
+    border-color: var(--letters);
     animation-name: ring-rotate;
     animation-timing-function: linear;
     animation-iteration-count: infinite;

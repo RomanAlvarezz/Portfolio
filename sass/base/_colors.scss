@@ -1,32 +1,47 @@
 :root {
     --body-bg: #0f1424;
-    --navbar-bg: #1c1f4a;
-    --navbar-bg-2: rgba(28, 31, 74, 0.725);
-    --letters: hsl(0, 0%, 90%);
-    --letters-dark: hsla(0, 0%, 100%, 0.4);
-    --navbar-shadow: hsl(0, 0%, 0%, 0.3);
+    --input-bg: #1c1f4a;
+    --letters: #e6e6e6;
+    --letters-dark: rgba(230, 230, 230, 0.7);
     --blue: #5847eb;
     --sky-blue: #56c2e6;
     --orange: #ff8c66;
     --green: #4acf81;
     --red: #ff5c7c;
     --violet: #7536d3;
-    --yellow: #f1c65b;
+    --yellow: #d8d83a;
+    --card-shadow: 0 25px 80px -10px hsla(246, 80%, 15%);
+    --profile-shadow: 0 2px 50px rgba(88, 71, 235, 0.2);
+
     --profile-filter: linear-gradient(
-        hsl(236, 45%, 20%, 0.35),
-        hsl(236, 45%, 20%, 0.3)
+        hsl(236, 45%, 20%, 0.45),
+        hsl(236, 45%, 20%, 0.4)
       ),
       url(../../assets/profile-picture.jpg);
+
+    --header-filter: linear-gradient(to bottom, #1c1f4abf, rgba(23, 29, 64,0.75), rgba(19, 26, 55,0.75), rgba(16, 23, 46, 0.75), rgba(15, 20, 36, 0.75));  
+
+    --card-filter: linear-gradient(to bottom, #1c1f4ae6, rgba(23, 29, 64,0.9), rgba(19, 26, 55,0.9), rgba(16, 23, 46, 0.9), rgba(15, 20, 36, 0.9));
 }
 
 .light-mode {
-    --orange: hsl(10, 100%, 60%);
-    --sky-blue: hsl(200, 90%, 42%);
-    --body-background: #f9f9f9;
-    --navbar-bg: #f9f9f9;
-    --navbar-bg-2: rgba(249, 249, 249, 0.725);
-    --navbar-shadow: hsl(0, 0%, 0%, 0.1);
+    --body-bg: #F0EFF4;
+    --input-bg: #e1e1e1;
+    --sky-blue: hsl(195, 74%, 50%);
     --letters: #0f1424;
-    --profile-filter: linear-gradient(hsl(0, 0%, 90%, 0.2), hsl(0, 0%, 90%, 0.1)),
+    --letters-dark: rgba(15, 20, 36, 0.7);
+    --card-shadow: 0 15px 80px -35px rgb(53, 51, 72);
+    --profile-shadow: 0 2px 40px rgba(88, 71, 235, 0.2);
+
+    --header-filter: linear-gradient(to bottom, rgba(227, 227, 227, 0.75), rgba(230, 230, 231, 0.75), rgba(233, 233, 235, 0.75), rgba(237, 236, 240, 0.75), rgba(240, 239, 244, 0.75));
+    
+    --card-filter: linear-gradient(to bottom, rgba(227, 227, 227, 0.8), rgba(230, 230, 231, 0.8), rgba(233, 233, 235, 0.8), rgba(237, 236, 240, 0.8), rgba(240, 239, 244, 0.8));
+
+    --profile-filter: linear-gradient(
+        hsl(236, 45%, 50%, 0.20),
+        hsl(236, 45%, 50%, 0.15)
+      ),
       url(../../assets/profile-picture.jpg);
+
+
 }

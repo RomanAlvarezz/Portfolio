@@ -1,26 +1,26 @@
 const d = document;
 
-export default function lightMode(btnIcon){
-    const icon = d.getElementById(btnIcon);
+export default function lightMode(){
+    const $btnTheme = d.querySelector('.menu__buttons-theme');
 
     if(localStorage.getItem('light-mode') === 'true'){
         d.body.classList.add('light-mode');
-        icon.src = './assets/bxs-moon.svg';
+        $btnTheme.innerHTML = `<i class="fa-regular fa-moon"></i>`;
     } else {
         d.body.classList.remove('light-mode');
-        icon.src = './assets/bxs-sun.svg';
+        $btnTheme.innerHTML = `<i class="fa-regular fa-sun"></i>`;
     }
 
-    icon.addEventListener('click', ()=>{
+    $btnTheme.addEventListener('click', ()=>{
         d.body.classList.toggle('light-mode');
     
         if(d.body.classList.contains('light-mode')){
             localStorage.setItem('light-mode', 'true');
-            icon.src = './assets/bxs-moon.svg';
+            $btnTheme.innerHTML = `<i class="fa-regular fa-moon"></i>`;
         } else {
             localStorage.setItem('light-mode', 'false');
-            icon.src = './assets/bxs-sun.svg';
+            $btnTheme.innerHTML = `<i class="fa-regular fa-sun"></i>`;
         }
-    })
+    });
 
 }

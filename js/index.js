@@ -3,22 +3,15 @@
 // import lightMode from "./lightMode.js";
 // import navAnimations from "./menu.js";
 import Galaxy from './galaxy.js';
+import menuBtn from './menu-btn.js';
+import lightMode from './lightMode.js';
 
 const d = document;
 
-d.addEventListener('DOMContentLoaded', e => {
+d.addEventListener('DOMContentLoaded', () => {
     Galaxy();
-})
-
-d.addEventListener('click', e => {
-    console.log(e.target)
-    if (e.target.matches('.menu__buttons-bars') ||
-     e.target.matches('.menu__buttons-bars *')) {
-        d.querySelector('.menu__buttons-bars').classList.toggle('is-active');
-        d.querySelector('.menu__nav-mobile').classList.toggle('menu__nav-mobile-active');
-        return;
-    }
-
+    menuBtn();
+    lightMode();
 })
 
 /*const $loader = document.querySelector('.loader-bg');
