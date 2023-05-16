@@ -1,29 +1,25 @@
 {
-    "nav":{
+    "nav-desktop":{
+        "home": "home",
+        "about": "about",
+        "proyects": "proyects",
+        "contact": "contact"
+    },
+    "nav-mobile":{
         "home": "home",
         "about": "about",
         "proyects": "proyects",
         "contact": "contact"
     },
     "home":{
-       "hi": "Hello I'm",
-       "rol": "frontend web developer +<br>systems engineering student",
-       "cv" : "Resumé"
+       "greeting": "Hi! , i'm",
+       "rol-1": "frontend web developer +",
+       "rol-2": "systems analysis student",
+       "btn-cv": "resumé"
     },
-    "code-block":{
-        "id": "\"person\"",
-        "name": "\"name\"",
-        "age": "\"age\"",
-        "location": "\"location\"",
-        "likes": "\"likes\"",
-        "like-1": "Swimming",
-        "like-2": "Coding",
-        "like-3": "Web Design"
-    },
-    "about":{
-        "title": "About me",
-        "description":"Hi, my name is Roman Alvarez and I am a self-taught Front End Developer based in Argentina. My first interactions with code began on sixth grade of High School (2020), programming microcontrollers with Arduino but I discovered my truly passion for programming last year when I decided to study systems engineering at the National Technological University (UTN) and also give it a try to the bootcamp of Rollingcode. It wasn't easy to keep up to date with both carrers but I learned a lot of stuff such as algorithms and data  structures, logical programming, working in teams with the scurm method and web design. I'm constantly trying to learn new technologies and concepts. I enjoy working with Javascript and I'm currently looking for my first job oportunity as a web developer.",
-        "subtitle": "My Skillset"
+    "about": {
+        "title": "about me",
+        "description": "Hi, my name is Roman Alvarez and I am a self-taught Front End Developer based in Argentina. My first interactions with code began on sixth grade of High School (2020), programming microcontrollers with Arduino but I discovered my truly passion for programming last year when I decided to study systems engineering at the National Technological University (UTN) and also give it a try to the bootcamp of Rollingcode. It wasn't easy to keep up to date with both carrers but I learned a lot of stuff such as algorithms and data  structures, logical programming, working in teams with the scurm method and web design. I'm constantly trying to learn new technologies and concepts. I enjoy working with Javascript and I'm currently looking for my first job oportunity as a web developer."
     },
     "proyects":{
         "title": "Proyects",
@@ -36,17 +32,20 @@
         "title-4": "Memory Game",
         "description-4": "This is a memory game based on the Scaloneta ⭐⭐⭐",
         "title-5": "Currency Converter",
-        "description-5": "It was made with the API of <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> and posses more than 100 diferent coins"
+        "description-5": "It was made with the API of <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> and posses more than 100 diferent coins",
+        "title-6": "Currency Converter",
+        "description-6": "It was made with the API of <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> and posses more than 100 diferent coins"
     },
-    "contact":{
-        "title": "Contact",
-        "subtitle": "Get in touch or shoot me an email directly on <a href='mailto:alvarezroman150@gmai.com'>alvarezroman150@gmai.com</a>",
-        "name": "Name",
-        "email": "Email",
-        "msg": "Message",
+    "contact": {
+        "title": "contact",
+        "description": "Get in touch or shoot me an email directly on<br><a href='mailto:alvarezroman150@gmai.com' class='contact__email'>alvarezroman150@gmail.com</a>",
+        "input-name": "name",
+        "input-email": "email",
+        "input-subject": "subject",
+        "input-msg": "message",
         "btn": "Send"
     },
     "footer":{
-        "title": "Design & Built by Román Alvarez"
+        "author": "Design & Built by Román Alvarez"
     }
 }

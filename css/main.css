@@ -116,9 +116,6 @@ header {
   width: 37px;
   border-radius: 2px;
 }
-.menu__flag:hover {
-  outline: solid rgba(88, 71, 235, 0.7) 3px;
-}
 .menu__flag-active {
   outline: solid var(--blue) 3px;
 }
@@ -751,6 +748,7 @@ header {
 .about__title {
   font-size: 30px;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 @media (min-width: 1000px) {
   .about__title {
@@ -957,6 +955,7 @@ header {
   color: var(--letters);
   font-size: 30px;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 @media (min-width: 1000px) {
   .contact__title {
@@ -1025,6 +1024,7 @@ header {
   color: var(--letters);
   font-weight: 500;
   font-size: 17px;
+  text-transform: capitalize;
 }
 @media (min-width: 1000px) {
   .form__label {

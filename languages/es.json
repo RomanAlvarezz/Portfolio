@@ -1,29 +1,25 @@
 {
-    "nav":{
+    "nav-desktop":{
+        "home": "inicio",
+        "about": "sobre mí",
+        "proyects": "proyectos",
+        "contact": "contacto"
+    },
+    "nav-mobile":{
         "home": "inicio",
         "about": "sobre mí",
         "proyects": "proyectos",
         "contact": "contacto"
     },
     "home":{
-       "hi": "Hola soy",
-       "rol": "desarrollador web frontend +<br>estudiante de ingeniería en sistemas",
-       "cv" : "Curriculum"
+        "greeting": "Hola! , soy",
+        "rol-1": "desarrollador web frontend +",
+        "rol-2": "estudiante de análisis en sistemas",
+        "btn-cv": "curriculum"
     },
-    "code-block":{
-        "id": "\"persona\"",
-        "name": "\"nombre\"",
-        "age": "\"edad\"",
-        "location": "\"ubicacion\"",
-        "likes": "\"gustos\"",
-        "like-1": "Natación",
-        "like-2": "Codear",
-        "like-3": "Diseño Web"
-    },
-    "about":{
-        "title": "Sobre mí",
-        "description":"Hola, mi nombre es Román Alvarez y soy desarrollador Front End autodidacta situado en Argentina. Mis primeras interacciones con código empezaron en sexto grado de secundaria (2020), programando microncontroladores con Arduino pero descubrí mi verdadera pasión por programar el año pasado cuando decidí estudiar ingeniería en sistemas en la Universidad Tecnológica Nacional (UTN) y también darle una oportunidad a el Bootcamp de Rollingcode. No fue fácil mantener al dia ambas carreras pero aprendí muchas cosas como algoritmos y estructuras de datos, programación lógica, diseño web y a trabajar en equipo con el método scrum. Estoy constantemente tratando de aprender nuevas tecnologías y conceptos. Disfruto trabajar con Javascript y actualmente estoy en busca de mi primera oportunidad laboral como Desarrollador Web.",
-        "subtitle": "Mis habilidades"
+    "about": {
+        "title": "sobre mí",
+        "description": "Hola, mi nombre es Román Alvarez y soy desarrollador Front End autodidacta situado en Argentina. Mis primeras interacciones con código empezaron en sexto grado de secundaria (2020), programando microncontroladores con Arduino pero descubrí mi verdadera pasión por programar el año pasado cuando decidí estudiar ingeniería en sistemas en la Universidad Tecnológica Nacional (UTN) y también darle una oportunidad a el Bootcamp de Rollingcode. No fue fácil mantener al dia ambas carreras pero aprendí muchas cosas como algoritmos y estructuras de datos, programación lógica, diseño web y a trabajar en equipo con el método scrum. Estoy constantemente tratando de aprender nuevas tecnologías y conceptos. Disfruto trabajar con Javascript y actualmente estoy en busca de mi primera oportunidad laboral como Desarrollador Web."
     },
     "proyects":{
         "title": "Proyectos",
@@ -36,17 +32,20 @@
         "title-4": "Juego de Memoria",
         "description-4": "Este es un juego de memoria basado en la Scaloneta ⭐⭐⭐",
         "title-5": "Conversor de Moneda",
-        "description-5": "Esta hecho con la API de <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y posee más de 100 monedas diferentes"
+        "description-5": "Esta hecho con la API de <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y posee más de 100 monedas diferentes",
+        "title-6": "Conversor de Moneda",
+        "description-6": "Esta hecho con la API de <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y posee más de 100 monedas diferentes"
     },
-    "contact":{
-        "title": "Contacto",
-        "subtitle": "Contactame o enviame un email directamente a <a href='mailto:alvarezroman150@gmai.com'>alvarezroman150@gmai.com</a>",
-        "name": "Nombre",
-        "email": "Correo",
-        "msg": "Mensaje",
-        "btn": "Enviar"
+    "contact": {
+        "title": "contacto",
+        "description": "Contactame o enviame un email directamente a<br><a href='mailto:alvarezroman150@gmai.com' class='contact__email'>alvarezroman150@gmail.com</a>",
+        "input-name": "nombre",
+        "input-email": "mail",
+        "input-subject": "asunto",
+        "input-msg": "mensaje",
+        "btn": "enviar"
     },
     "footer":{
-        "title": "Diseñada & Construida por Román Alvarez"
+        "author": "Diseñada y Construida por Román Alvarez"
     }
 }

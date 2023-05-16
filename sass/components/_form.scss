@@ -44,6 +44,7 @@
         color: var(--letters);
         font-weight: 500;
         font-size: 17px;
+        text-transform: capitalize;
 
         @media (min-width: 1000px) {
             font-size: 18px;

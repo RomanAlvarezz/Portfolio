@@ -1,17 +1,18 @@
 // import showElements from "./show.js";
-// import language from "./language.js";
 // import lightMode from "./lightMode.js";
 // import navAnimations from "./menu.js";
 import Galaxy from './galaxy.js';
 import menuBtn from './menu-btn.js';
 import lightMode from './lightMode.js';
+import language from "./language.js";
 
 const d = document;
 
 d.addEventListener('DOMContentLoaded', () => {
-    Galaxy();
+    //Galaxy();
     menuBtn();
     lightMode();
+    language();
 })
 
 /*const $loader = document.querySelector('.loader-bg');

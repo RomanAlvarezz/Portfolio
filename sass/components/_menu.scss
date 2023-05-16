@@ -19,10 +19,6 @@
         width: 37px;
         border-radius: 2px;
 
-        &:hover {
-            outline: solid rgba(88, 71, 235, 0.7) 3px;
-        }
-
         &-active {
             outline: solid var(--blue) 3px;
         }

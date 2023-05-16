@@ -17,16 +17,20 @@
 <body>
     <header>
         <div class="menu">
-            <div class="menu__flags">
-                <img class="menu__flag" src="./assets/flag-arg.svg" alt="argentina flag">
-                <img class="menu__flag menu__flag-active" src="./assets/flag-eng.svg" alt="england flag">
+            <div class="menu__flags" id="menu__flags">
+                <img class="menu__flag" data-language="es" src="./assets/flag-arg.svg" alt="argentina flag">
+                <img class="menu__flag" data-language="en" src="./assets/flag-eng.svg" alt="england flag">
             </div>
 
             <nav class="menu__nav-desktop">
-                <a class="menu__nav-desktop__link" href="#">home</a>
-                <a class="menu__nav-desktop__link" href="#about">about</a>
-                <a class="menu__nav-desktop__link" href="#proyects">proyects</a>
-                <a class="menu__nav-desktop__link" href="#contact">contact</a>
+                <a class="menu__nav-desktop__link" href="#"
+                data-section="nav-desktop" data-value="home">home</a>
+                <a class="menu__nav-desktop__link" href="#about"
+                data-section="nav-desktop" data-value="about">about</a>
+                <a class="menu__nav-desktop__link" href="#proyects"
+                data-section="nav-desktop" data-value="proyects">proyects</a>
+                <a class="menu__nav-desktop__link" href="#contact"
+                data-section="nav-desktop" data-value="contact">contact</a>
             </nav>
             
             <div class="menu__buttons">
@@ -43,22 +47,30 @@
         </div>
     </header>
     <nav class="menu__nav-mobile">
-        <a class="menu__nav-mobile__link" href="#">home</a>
-        <a class="menu__nav-mobile__link" href="#about">about</a>
-        <a class="menu__nav-mobile__link" href="#proyects">proyects</a>
-        <a class="menu__nav-mobile__link" href="#contact">contact</a>
+        <a class="menu__nav-mobile__link" href="#"
+        data-section="nav-mobile" data-value="home">home</a>
+        <a class="menu__nav-mobile__link" href="#about"
+        data-section="nav-mobile" data-value="about">about</a>
+        <a class="menu__nav-mobile__link" href="#proyects"
+        data-section="nav-mobile" data-value="proyects">proyects</a>
+        <a class="menu__nav-mobile__link" href="#contact"
+        data-section="nav-mobile" data-value="contact">contact</a>
       </nav>
     <main>
       <section id="home" class="home">
 
         <article class="home__texts__container">
             <div class="home__texts">
-            <h3 class="home__hello">Hi, i'm</h3>
+            <h3 class="home__hello" data-section="home" data-value="greeting">Hi, i'm</h3>
             <h1 class="home__name">Román</h1>
-            <h3 class="home__description">frontend web developer +</h3>
-            <h3 class="home__description">systems analysis student</h3>
+            <h3 class="home__description" 
+            data-section="home" 
+            data-value="rol-1">frontend web developer +</h3>
+            <h3 class="home__description" 
+            data-section="home" 
+            data-value="rol-2">systems analysis student</h3>
             <div class="home__buttons">
-                <a class="home__buttons__resume">resumé</a>
+                <a class="home__buttons__resume" data-section="home" data-value="btn-cv">resumé</a>
                 <div class="home__buttons-group">
                     <a href="#" class="home__buttons__social-media">
                         <i class="fa-brands fa-square-github"></i>
@@ -117,8 +129,8 @@
       <section id="about" class="about">
         
         <article class="about__text">
-          <h2 class="about__title">About Me</h2>
-          <p class="about__description">
+          <h2 class="about__title" data-section="about" data-value="title">About Me</h2>
+          <p class="about__description" data-section="about" data-value="description">
             Hi, my name is Roman Alvarez and I am a self-taught Front End
             Developer based in Argentina. My first interactions with code began on
             sixth grade of High School (2020), programming microcontrollers with
@@ -140,16 +152,20 @@
       </section>
 
       <section id="proyects" class="proyects">
-        <h2 class="proyects__title">proyects</h2>
+        <h2 class="proyects__title" data-section="proyects" data-value="title">proyects</h2>
         <div class="proyects__container">
             <article class="proyects__card">
                 <img class="proyects__card__image"
                 src="./assets/proyects/LinguinisKitchenScreen.png"
                  alt="proyect image">
                 <div class="proyects__card__content">
-                    <h3 class="proyects__card__title">JS Calculator
+                    <h3 class="proyects__card__title" 
+                    data-section="proyects"
+                    data-value="title-1">JS Calculator
                     </h3>
-                    <p class="proyects__card__description">
+                    <p class="proyects__card__description" 
+                    data-section="proyects"
+                    data-value="description-1">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequuntur veritatis temporibus? Sapiente voluptatem quae, magnam sequi vitae est, dolorum nisi error ullam, adipisci placeat repellendus 
                     </p>
                     <div class="proyects__card__bottom">
@@ -172,9 +188,13 @@
                 src="./assets/proyects/MemoryGame.png"
                  alt="proyect image">
                 <div class="proyects__card__content">
-                    <h3 class="proyects__card__title">JS Calculator
+                    <h3 class="proyects__card__title"
+                    data-section="proyects"
+                    data-value="title-2">JS Calculator
                     </h3>
-                    <p class="proyects__card__description">
+                    <p class="proyects__card__description"
+                    data-section="proyects"
+                    data-value="description-2">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequuntur veritatis temporibus? Sapiente voluptatem quae, magnam sequi vitae est, dolorum nisi error ullam, adipisci placeat repellendus 
                     </p>
                     <div class="proyects__card__bottom">
@@ -197,9 +217,13 @@
                 src="./assets/proyects/RockPaperScissor.png"
                  alt="proyect image">
                 <div class="proyects__card__content">
-                    <h3 class="proyects__card__title">JS Calculator
+                    <h3 class="proyects__card__title"
+                    data-section="proyects"
+                    data-value="title-3">JS Calculator
                     </h3>
-                    <p class="proyects__card__description">
+                    <p class="proyects__card__description"
+                    data-section="proyects"
+                    data-value="description-3">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequuntur veritatis temporibus? Sapiente voluptatem quae, magnam sequi vitae est, dolorum nisi error ullam, adipisci placeat repellendus 
                     </p>
                     <div class="proyects__card__bottom">
@@ -222,9 +246,13 @@
                 src="./assets/proyects/CalculatorScreen.png"
                  alt="proyect image">
                 <div class="proyects__card__content">
-                    <h3 class="proyects__card__title">JS Calculator
+                    <h3 class="proyects__card__title"
+                    data-section="proyects"
+                    data-value="title-4">JS Calculator
                     </h3>
-                    <p class="proyects__card__description">
+                    <p class="proyects__card__description"
+                    data-section="proyects"
+                    data-value="description-4">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequuntur veritatis temporibus? Sapiente voluptatem quae, magnam sequi vitae est, dolorum nisi error ullam, adipisci placeat repellendus 
                     </p>
                     <div class="proyects__card__bottom">
@@ -247,9 +275,13 @@
                 src="./assets/proyects/Todolist.png"
                  alt="proyect image">
                 <div class="proyects__card__content">
-                    <h3 class="proyects__card__title">JS Calculator
+                    <h3 class="proyects__card__title"
+                    data-section="proyects"
+                    data-value="title-5">JS Calculator
                     </h3>
-                    <p class="proyects__card__description">
+                    <p class="proyects__card__description"
+                    data-section="proyects"
+                    data-value="description-5">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequuntur veritatis temporibus? Sapiente voluptatem quae, magnam sequi vitae est, dolorum nisi error ullam, adipisci placeat repellendus 
                     </p>
                     <div class="proyects__card__bottom">
@@ -272,9 +304,13 @@
                 src="./assets/proyects/CurrencConverter.png"
                  alt="proyect image">
                 <div class="proyects__card__content">
-                    <h3 class="proyects__card__title">JS Calculator
+                    <h3 class="proyects__card__title"
+                    data-section="proyects"
+                    data-value="title-6">JS Calculator
                     </h3>
-                    <p class="proyects__card__description">
+                    <p class="proyects__card__description"
+                    data-section="proyects"
+                    data-value="description-6">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis consequuntur veritatis temporibus? Sapiente voluptatem quae, magnam sequi vitae est, dolorum nisi error ullam, adipisci placeat repellendus 
                     </p>
                     <div class="proyects__card__bottom">
@@ -296,8 +332,8 @@
       </section>
 
       <section id="contact" class="contact">
-        <h1 class="contact__title">Contact</h1>
-        <p class="contact__description">
+        <h1 class="contact__title" data-section="contact" data-value="title">Contact</h1>
+        <p class="contact__description" data-section="contact" data-value="description">
         Get in touch or shoot me an email directly on<br>
           <a href="mailto:alvarezroman150@gmai.com" class="contact__email">
             alvarezroman150@gmail.com
@@ -306,28 +342,38 @@
         <form class="form">
             <div class="form__top">
                 <div class="form__group">
-                    <label class="form__label" for="name">Name</label>
+                    <label class="form__label" for="name"
+                    data-section="contact"
+                    data-value="input-name">Name</label>
                     <input class="form__input" type="text" id="name">
                     <span class="form__selected"></span>
                 </div>
                 <div class="form__group">
-                    <label class="form__label" for="email">Email</label>
+                    <label class="form__label" for="email"
+                    data-section="contact"
+                    data-value="input-email">Email</label>
                     <input class="form__input" type="text" id="email">
                     <span class="form__selected"></span>
                 </div> 
             </div>
             <div class="form__group">
-                <label class="form__label" for="business">Business</label>
+                <label class="form__label" for="business"
+                data-section="contact"
+                data-value="input-subject">Subject</label>
                 <input class="form__input" type="text" id="business">
                 <span class="form__selected"></span>
             </div> 
             <div class="form__group">
-                <label class="form__label" for="message">Message</label>
+                <label class="form__label" for="message"
+                data-section="contact"
+                data-value="input-msg">Message</label>
                 <textarea  id="message" class="form__input form__input-textarea"></textarea>
                 <span class="form__selected"></span>
             </div> 
                 <button class="form__button">
-                    <span class="form__text">Send</span>
+                    <span class="form__text"
+                    data-section="contact"
+                    data-value="btn">Send</span>
                     <i class="fa-solid fa-paper-plane form__icon"></i>
                 </button>
         </form>
@@ -376,7 +422,7 @@
       </g>
     </svg>
 
-    <footer data-section="footer" data-value="title">
+    <footer data-section="footer" data-value="author">
         Design & Built by Román Alvarez
       </footer>
 

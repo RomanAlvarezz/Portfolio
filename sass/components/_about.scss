@@ -25,6 +25,7 @@
     &__title {
       font-size: 30px;
       margin-bottom: 15px;
+      text-transform: capitalize;
 
       @media (min-width: 1000px) {
           font-size: 35px;
