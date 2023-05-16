@@ -1,7 +1,7 @@
 // import showElements from "./show.js";
 // import lightMode from "./lightMode.js";
 // import navAnimations from "./menu.js";
-import Galaxy from './galaxy.js';
+import galaxy from './galaxy.js';
 import menuBtn from './menu-btn.js';
 import lightMode from './lightMode.js';
 import language from "./language.js";
@@ -9,7 +9,7 @@ import language from "./language.js";
 const d = document;
 
 d.addEventListener('DOMContentLoaded', () => {
-    //Galaxy();
+    galaxy();
     menuBtn();
     lightMode();
     language();

@@ -1,14 +1,15 @@
 const d = document;
 const styles = ['inset', 'dashed', 'outset'];
 
-export default function Galaxy(){
+export default function galaxy(){
+
  d.addEventListener('click', e => {
     const $element = e.target;
 
-    if($element.dataset.language){
-        const language = $element.dataset.language;
-        d.querySelector(`.moon__${language}`).classList.toggle('moon-active');
-        d.querySelector(`.moon__content__${language}`).classList.toggle('moon__content-active');
+    if($element.dataset.skill){
+        const skill = $element.dataset.skill;
+        d.querySelector(`.moon__${skill}`).classList.toggle('moon-active');
+        d.querySelector(`.moon__content__${skill}`).classList.toggle('moon__content-active');
         return;
     }
 
@@ -23,4 +24,5 @@ export default function Galaxy(){
     return;
     }
 })   
+
 }

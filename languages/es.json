@@ -43,7 +43,7 @@
         "input-email": "mail",
         "input-subject": "asunto",
         "input-msg": "mensaje",
-        "btn": "enviar"
+        "btn": "Enviar"
     },
     "footer":{
         "author": "Diseñada y Construida por Román Alvarez"
