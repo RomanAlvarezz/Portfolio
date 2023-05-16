@@ -429,7 +429,7 @@ header {
   font-size: 30px;
   cursor: pointer;
   filter: brightness(0.85);
-  transition: filter 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 @media (min-width: 550px) {
   .home__buttons__social-media {
@@ -443,6 +443,7 @@ header {
 }
 .home__buttons__social-media:hover {
   filter: brightness(1.1);
+  transform: translateY(-2.5px);
 }
 .home__buttons__social-media:first-child {
   color: var(--green);

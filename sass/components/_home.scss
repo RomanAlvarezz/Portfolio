@@ -144,7 +144,7 @@
             font-size: 30px;
             cursor: pointer;
             filter: brightness(0.85);
-            transition: filter 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
 
             @media (min-width: 550px) {
                 font-size: 40px;
@@ -156,6 +156,7 @@
 
             &:hover {
                 filter: brightness(1.1);
+                transform: translateY(-2.5px);
             }
 
             &:first-child {
