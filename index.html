@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -18,26 +20,55 @@
     <header>
         <div class="menu">
             <div class="menu__flags" id="menu__flags">
-                <img class="menu__flag" data-language="es" src="./assets/flag-arg.svg" alt="argentina flag">
-                <img class="menu__flag" data-language="en" src="./assets/flag-eng.svg" alt="england flag">
+                <img class="menu__flag" 
+                data-language="es" 
+                data-aos="fade-down"
+                src="./assets/flag-arg.svg" 
+                alt="argentina flag">
+                <img class="menu__flag" 
+                data-language="en" 
+                data-aos="fade-down"
+				data-aos-delay="100"
+                src="./assets/flag-eng.svg" 
+                alt="england flag">
             </div>
 
             <nav class="menu__nav-desktop">
-                <a class="menu__nav-desktop__link" href="#"
-                data-section="nav-desktop" data-value="home">home</a>
-                <a class="menu__nav-desktop__link" href="#about"
-                data-section="nav-desktop" data-value="about">about</a>
-                <a class="menu__nav-desktop__link" href="#proyects"
-                data-section="nav-desktop" data-value="proyects">proyects</a>
-                <a class="menu__nav-desktop__link" href="#contact"
-                data-section="nav-desktop" data-value="contact">contact</a>
+                <a class="menu__nav-desktop__link" 
+                href="#"
+                data-section="nav-desktop"
+                data-value="home"
+                data-aos="fade-down"
+				data-aos-delay="200">home</a>
+                <a class="menu__nav-desktop__link"
+                href="#about"
+                data-section="nav-desktop"
+                data-value="about"
+                data-aos="fade-down"
+				data-aos-delay="300">about</a>
+                <a class="menu__nav-desktop__link" 
+                href="#proyects"
+                data-section="nav-desktop" data-value="proyects"
+                data-aos="fade-down"
+				data-aos-delay="400">proyects</a>
+                <a class="menu__nav-desktop__link" 
+                href="#contact"
+                data-section="nav-desktop" 
+                data-value="contact"
+                data-aos="fade-down"
+				data-aos-delay="500">contact</a>
             </nav>
             
             <div class="menu__buttons">
-                <button class="menu__buttons-theme">
+                <button class="menu__buttons-theme"
+                data-aos="fade-down"
+				data-aos-delay="600">
                     <i class="fa-regular fa-sun"></i>
                 </button>
-                <button class="menu__buttons-bars hamburger hamburger--stand" type="button">
+                <button class="menu__buttons-bars hamburger hamburger--stand" 
+                type="button"
+                data-aos="fade-down"
+				data-aos-delay="700">
                     <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
                     </span>
@@ -61,32 +92,48 @@
 
         <article class="home__texts__container">
             <div class="home__texts">
-            <h3 class="home__hello" data-section="home" data-value="greeting">Hi, i'm</h3>
-            <h1 class="home__name">Román</h1>
-            <h3 class="home__description" 
-            data-section="home" 
-            data-value="rol-1">frontend web developer +</h3>
-            <h3 class="home__description" 
-            data-section="home" 
-            data-value="rol-2">systems analysis student</h3>
-            <div class="home__buttons">
-                <a class="home__buttons__resume" data-section="home" data-value="btn-cv">resumé</a>
-                <div class="home__buttons-group">
-                    <a href="#" class="home__buttons__social-media">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
-                    <a href="#" class="home__buttons__social-media">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="home__buttons__social-media">
-                        <i class="fa-solid fa-square-envelope"></i>
-                    </a>
-                </div>  
-            </div>
+                <h3 class="home__hello" 
+                data-section="home" 
+                data-value="greeting"
+                data-aos="fade-right"
+			    data-aos-delay="800">Hi, i'm</h3>
+                <h1 class="home__name"
+                data-aos="fade-right"
+			    
+			    data-aos-delay="900"
+			    data-aos-duration="600">Román</h1>
+                <h3 class="home__description" 
+                    data-section="home" 
+                    data-value="rol-1"
+                    data-aos="fade-right"
+			        data-aos-delay="1000">frontend web developer +</h3>
+                <h3 class="home__description" 
+                    data-section="home" 
+                    data-value="rol-2"
+                    data-aos="fade-right"
+                    data-aos-delay="1200">systems analysis student</h3>
+                <div class="home__buttons"
+                    data-aos="fade-right"
+			        data-aos-delay="1300">
+                        <a class="home__buttons__resume" data-section="home" data-value="btn-cv">resumé</a>
+                            <div class="home__buttons-group">
+                        <a href="#" class="home__buttons__social-media">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                        <a href="#" class="home__buttons__social-media">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="home__buttons__social-media">
+                            <i class="fa-solid fa-square-envelope"></i>
+                        </a>
+                    </div>  
+                </div>
             </div>
         </article>
         
-        <article class="galaxy__container">
+        <article class="galaxy__container"
+                    data-aos="fade-left"		        
+			        data-aos-delay="1000">
             <div class="galaxy">
             <div class="ring ring__1">
                 <div class="moon moon__html">
@@ -129,8 +176,15 @@
       <section id="about" class="about">
         
         <article class="about__text">
-          <h2 class="about__title" data-section="about" data-value="title">About Me</h2>
-          <p class="about__description" data-section="about" data-value="description">
+          <h2 class="about__title" 
+          data-section="about" 
+          data-value="title"
+          data-aos="fade-up">About Me</h2>
+          <p class="about__description" 
+          data-section="about" 
+          data-value="description"
+          data-aos="fade-up"
+		  data-aos-delay="100">
             Hi, my name is Roman Alvarez and I am a self-taught Front End
             Developer based in Argentina. My first interactions with code began on
             sixth grade of High School (2020), programming microcontrollers with
@@ -146,15 +200,21 @@
           </p>
         </article>
 
-        <article class="about__image">
+        <article class="about__image"
+        data-aos="fade-up">
         </article>
 
       </section>
 
       <section id="proyects" class="proyects">
-        <h2 class="proyects__title" data-section="proyects" data-value="title">proyects</h2>
+        <h2 class="proyects__title" 
+        data-section="proyects" 
+        data-value="title"
+        data-aos="fade-up">proyects</h2>
+
         <div class="proyects__container">
-            <article class="proyects__card">
+            <article class="proyects__card"
+            data-aos="fade-up">
                 <img class="proyects__card__image"
                 src="./assets/proyects/LinguinisKitchenScreen.png"
                  alt="proyect image">
@@ -183,7 +243,9 @@
                     </div>
                 </div>
             </article>
-            <article class="proyects__card" id="proyects">
+            <article class="proyects__card"
+            data-aos="fade-up"
+		    data-aos-delay="100">
                 <img class="proyects__card__image"
                 src="./assets/proyects/MemoryGame.png"
                  alt="proyect image">
@@ -212,7 +274,9 @@
                     </div>
                 </div>
             </article>
-            <article class="proyects__card">
+            <article class="proyects__card"
+            data-aos="fade-up"  
+		    data-aos-delay="200">
                 <img class="proyects__card__image"
                 src="./assets/proyects/RockPaperScissor.png"
                  alt="proyect image">
@@ -241,7 +305,8 @@
                     </div>
                 </div>
             </article>
-            <article class="proyects__card">
+            <article class="proyects__card"
+            data-aos="fade-up">
                 <img class="proyects__card__image"
                 src="./assets/proyects/CalculatorScreen.png"
                  alt="proyect image">
@@ -270,7 +335,9 @@
                     </div>
                 </div>
             </article>
-            <article class="proyects__card">
+            <article class="proyects__card"
+            data-aos="fade-up"
+		    data-aos-delay="100">
                 <img class="proyects__card__image"
                 src="./assets/proyects/Todolist.png"
                  alt="proyect image">
@@ -299,7 +366,9 @@
                     </div>
                 </div>
             </article>
-            <article class="proyects__card">
+            <article class="proyects__card"
+            data-aos="fade-up"
+		    data-aos-delay="200">
                 <img class="proyects__card__image"
                 src="./assets/proyects/CurrencConverter.png"
                  alt="proyect image">
@@ -332,8 +401,15 @@
       </section>
 
       <section id="contact" class="contact">
-        <h1 class="contact__title" data-section="contact" data-value="title">Contact</h1>
-        <p class="contact__description" data-section="contact" data-value="description">
+        <h1 class="contact__title" 
+        data-section="contact" 
+        data-value="title"
+        data-aos="fade-up">Contact</h1>
+        <p class="contact__description" 
+        data-section="contact" 
+        data-value="description"
+        data-aos="fade-up"
+		data-aos-delay="100">
         Get in touch or shoot me an email directly on<br>
           <a href="mailto:alvarezroman150@gmai.com" class="contact__email">
             alvarezroman150@gmail.com
@@ -341,14 +417,18 @@
         </p>
         <form class="form">
             <div class="form__top">
-                <div class="form__group">
+                <div class="form__group"
+                data-aos="fade-up"
+		        data-aos-delay="200">
                     <label class="form__label" for="name"
                     data-section="contact"
                     data-value="input-name">Name</label>
                     <input class="form__input" type="text" id="name">
                     <span class="form__selected"></span>
                 </div>
-                <div class="form__group">
+                <div class="form__group"
+                data-aos="fade-up"
+		        data-aos-delay="200">
                     <label class="form__label" for="email"
                     data-section="contact"
                     data-value="input-email">Email</label>
@@ -356,21 +436,27 @@
                     <span class="form__selected"></span>
                 </div> 
             </div>
-            <div class="form__group">
+            <div class="form__group"
+            data-aos="fade-up"
+		    data-aos-delay="300">
                 <label class="form__label" for="business"
                 data-section="contact"
                 data-value="input-subject">Subject</label>
                 <input class="form__input" type="text" id="business">
                 <span class="form__selected"></span>
             </div> 
-            <div class="form__group">
+            <div class="form__group"
+            data-aos="fade-up"
+		    data-aos-delay="400">
                 <label class="form__label" for="message"
                 data-section="contact"
                 data-value="input-msg">Message</label>
                 <textarea  id="message" class="form__input form__input-textarea"></textarea>
                 <span class="form__selected"></span>
             </div> 
-                <button class="form__button">
+                <button class="form__button"
+                data-aos="fade-up"
+		        data-aos-delay="500">
                     <span class="form__text"
                     data-section="contact"
                     data-value="btn">Send</span>
@@ -426,6 +512,15 @@
         Design & Built by Román Alvarez
       </footer>
 
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/index.js" defer type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			startEvent: 'DOMContentLoaded',
+            once: true,
+            duration: 600,
+            easing: 'ease'
+		});
+	</script>
 </body>
 </html>
