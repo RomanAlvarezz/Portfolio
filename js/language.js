@@ -18,11 +18,11 @@ export default function language(){
 
     const localLanguage = localStorage.getItem('language');
     
-    if(localLanguage === 'espaniol') {
+    if(localLanguage === 'es') {
         changeLanguage('es');
         d.querySelector(`[data-language=es]`).classList.add('menu__flag-active');
     }
-    if(localLanguage === 'english' || !(localLanguage)) {
+    if(localLanguage === 'en' || !(localLanguage)) {
         changeLanguage('en');
         d.querySelector(`[data-language=en]`).classList.add('menu__flag-active');
     }
@@ -38,11 +38,11 @@ export default function language(){
             switch (lang) {
                 case 'es':
                     d.querySelector(`[data-language=en]`).classList.remove('menu__flag-active');
-                    localStorage.setItem('language', 'espaniol')
+                    localStorage.setItem('language', 'es')
                     break;
                 case 'en':
                     d.querySelector(`[data-language=es]`).classList.remove('menu__flag-active');
-                    localStorage.setItem('language', 'english');
+                    localStorage.setItem('language', 'en');
                 break;
             }
 

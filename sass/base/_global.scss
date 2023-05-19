@@ -32,3 +32,17 @@ main {
   max-width: 1450px;
 }
 
+#loading-logo {
+  border: 3.5px solid var(--letters-dark);
+  width: 20px;
+  height: 20px;
+  border-top: solid var(--letters) 3.5px;
+  border-radius: 100%;
+  animation: turn 1s linear infinite;
+}
+
+@keyframes turn {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
