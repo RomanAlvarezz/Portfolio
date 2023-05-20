@@ -3,6 +3,7 @@ const d = document;
 export default function form () {
     d.addEventListener('submit', e => {
         e.preventDefault();
+        e.target.reset();
         const language = localStorage.getItem('language') || 'en';
         const $btn = d.querySelector('.form__button');
         const $alert = d.querySelector('.form__alert');
