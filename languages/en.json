@@ -19,22 +19,22 @@
     },
     "about": {
         "title": "about me",
-        "description": "Hi, my name is Roman Alvarez and I am a self-taught Front End Developer based in Argentina. My first interactions with code began on sixth grade of High School (2020), programming microcontrollers with Arduino but I discovered my truly passion for programming last year when I decided to study systems engineering at the National Technological University (UTN) and also give it a try to the bootcamp of Rollingcode. It wasn't easy to keep up to date with both carrers but I learned a lot of stuff such as algorithms and data  structures, logical programming, working in teams with the scurm method and web design. I'm constantly trying to learn new technologies and concepts. I enjoy working with Javascript and I'm currently looking for my first job oportunity as a web developer."
+        "description": "Hi, my name is Roman Alvarez and I am a self-taught Front End Developer based in Argentina, Rosario. My first interactions with code began on my last grade of High School (2020), programming microcontrollers with Arduino, which I didn't like very much but made me curious about coding. In 2021 I decided to study Systems Engineering at the National Technological University (UTN), where I acquired knowledge of algorithms, structure programing and Python. Then in 2022 I started a FullStack bootcamp in RollingCode School, where I learned technologies such as Html, Css, Javascript, Sass, Figma, web design and also how to work with agile methodologies like Scrum. It wasn't easy to keep up to date with both careers but this taught me how to manage my times based on my objectives. Finally, in 2023 I switched to the Systems Analyst's career in the Higher Polytechnic Institute of Rosario. Nowadays, I'm studying my degree and learning web programing by myself in order to get my first job opportunity in the IT World."
     },
     "proyects":{
         "title": "Proyects",
-        "title-1": "Todo List",
-        "description-1": "Responsive Todo List with Local Storage and validations for inputs",
-        "title-2": "JS Calculator",
-        "description-2": "Calculator for basic operations",
-        "title-3": "Rock Paper Scissors",
-        "description-3": "Rock Paper Scissors game against the computer with scores",
-        "title-4": "Memory Game",
-        "description-4": "This is a memory game based on the Scaloneta ⭐⭐⭐",
-        "title-5": "Currency Converter",
-        "description-5": "It was made with the API of <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> and posses more than 100 diferent coins",
-        "title-6": "Currency Converter",
-        "description-6": "It was made with the API of <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> and posses more than 100 diferent coins"
+        "title-1": "Linguini's Kitchen",
+        "description-1": "Linguini's Kitchen is a Food page for searching and save recipes based on what you have on your fridge. In addition you can find food depending on diffrerent characteristics like intolerances, cuisine, type and diet. It is made with the Api of <a href='https://spoonacular.com/food-api' target='_blank' class='proyects__card__link'>Spoonacular</a>",
+        "title-2": "Memory Game",
+        "description-2": "This is a memory game inspired in the Scaloneta ⭐⭐⭐(Argentinian football national team). It uses figures from the Qtar 2022 World Cup album ",
+        "title-3": "Todo List",
+        "description-3": "A simple todolist to take notes of your daily homeworks with the posibility to divide them in two types: business and personal. It implements LocalStorge to save what you wrote despite closing the window",
+        "title-4": "Currency Converter",
+        "description-4": "In this app you can enter an amount and convert your currency to a different country's currency. You can also easily exchange or reverse the two countries' currency. It is made with the <a class='proyects__card__link' href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> Api and posses more than 100 diferent coins",
+        "title-5": "Rock Paper and Scissors",
+        "description-5": "A Rock Paper and Scissors game against the machine",
+        "title-6": "JS Calculator",
+        "description-6": "Calculator for basic operations"
     },
     "contact": {
         "title": "contact",

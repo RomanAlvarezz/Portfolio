@@ -811,7 +811,6 @@ header {
   }
 }
 .about__image::before {
-  z-index: -1;
   content: "";
   position: absolute;
   width: 100%;
@@ -923,6 +922,16 @@ header {
 }
 @media (min-width: 800px) {
   .proyects__card__description {
+    font-size: 16px;
+  }
+}
+.proyects__card__link {
+  color: var(--blue);
+  font-size: 15px;
+  line-height: 25px;
+}
+@media (min-width: 800px) {
+  .proyects__card__link {
     font-size: 16px;
   }
 }

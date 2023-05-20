@@ -19,22 +19,22 @@
     },
     "about": {
         "title": "sobre mí",
-        "description": "Hola, mi nombre es Román Alvarez y soy desarrollador Front End autodidacta situado en Argentina. Mis primeras interacciones con código empezaron en sexto grado de secundaria (2020), programando microncontroladores con Arduino pero descubrí mi verdadera pasión por programar el año pasado cuando decidí estudiar ingeniería en sistemas en la Universidad Tecnológica Nacional (UTN) y también darle una oportunidad a el Bootcamp de Rollingcode. No fue fácil mantener al dia ambas carreras pero aprendí muchas cosas como algoritmos y estructuras de datos, programación lógica, diseño web y a trabajar en equipo con el método scrum. Estoy constantemente tratando de aprender nuevas tecnologías y conceptos. Disfruto trabajar con Javascript y actualmente estoy en busca de mi primera oportunidad laboral como Desarrollador Web."
+        "description": "Hola, mi nombre es Román Alvarez y soy desarrollador Front End autodidacta situado en Argentina, Rosario. Mis primeras interacciones con código empezaron en mi último año de secundaria (2020), programando microcontroladores con Arduino, lo cual no me gustaba mucho, pero me dió curiosidad por la programación. En 2021 empecé a estudiar Ingeniería en Sistemas en la Universidad Tecnológica Nacional, donde adquirí conocimientos sobre algoritmos, programación estructurada y Python. Luego en 2022 comencé un bootcamp FullStack, donde aprendí tecnologías como Html, Css, Javascript, Sass, Figma y también a trabajar en equipo con metodologías agiles. No fue fácil mantener al día ambas carreras, pero me enseñó a distribuir mis tiempos en base a mis objetivos. Finalmente, en 2023 me cambie a la carrera de Análisis en Sistemas en el Instituto Politécnico Superior de Rosario. Actualmente estoy cursando mi carrera y aprendiendo programación web de forma autodidacta para conseguir mi primera oportunidad laboral en el mundo IT. "
     },
     "proyects":{
         "title": "Proyectos",
-        "title-1": "Lista de Tareas",
-        "description-1": "Lista de Tareas responsive con Local Storage y validaciones para los inputs",
-        "title-2": "Calculadora JS",
-        "description-2": "Calculadora para operaciones básicas",
-        "title-3": "Piedra, Papel o Tijeras",
-        "description-3": "Juego de piedra, papel  tijeras contra la computadora con puntuaciones",
-        "title-4": "Juego de Memoria",
-        "description-4": "Este es un juego de memoria basado en la Scaloneta ⭐⭐⭐",
-        "title-5": "Conversor de Moneda",
-        "description-5": "Esta hecho con la API de <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y posee más de 100 monedas diferentes",
-        "title-6": "Conversor de Moneda",
-        "description-6": "Esta hecho con la API de <a href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y posee más de 100 monedas diferentes"
+        "title-1": "La cocina de Linguini",
+        "description-1": "La cocina de Linguini es una página de comidas para buscar recetas en base lo que tengas en tu heladera. Además podrás buscar alimentos dependiendo de difrentes carcterísticas como intolerancias, países, tipos y dietas. Esta hecha con la Api de <a href='https://spoonacular.com/food-api' target='_blank' class='proyects__card__link'>Spoonacular</a>",
+        "title-2": "Juego de Memoria",
+        "description-2": "Este es un juego de memoria inspirado en La Scaloneta(selección de futbol argentina). Utiliza las figuritas del album de Qtar 2022",
+        "title-3": "Lista de Tareas",
+        "description-3": "Una simple lista de tareas para tomar nota sobre tus tareas diarias con la posibilidad de dividirlas en dos tipos: negocios y personales. Esta implementa LocalStorge para poder guardar lo que escribiste a pesar de cerrar la ventana",
+        "title-4": "Conversor de Monedas",
+        "description-4": "En esta aplicación puede ingresar una cantidad y convertir su moneda a la moneda de un país diferente. También puede cambiar o invertir fácilmente la moneda de los dos países. Esta hecha con la Api de <a class='proyects__card__link' href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y tiene más de 100 monedas diferentes.",
+        "title-5": "Piedra Papel o Tijera",
+        "description-5": "Un juego de Piedra Papel o Tijera contra la máquina",
+        "title-6": "Calculadora JS",
+        "description-6": "Calculadora para operaciones básicas"
     },
     "contact": {
         "title": "contacto",
