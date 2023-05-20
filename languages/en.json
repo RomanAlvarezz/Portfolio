@@ -26,7 +26,7 @@
         "title-1": "Linguini's Kitchen",
         "description-1": "Linguini's Kitchen is a Food page for searching and save recipes based on what you have on your fridge. In addition you can find food depending on diffrerent characteristics like intolerances, cuisine, type and diet. It is made with the Api of <a href='https://spoonacular.com/food-api' target='_blank' class='proyects__card__link'>Spoonacular</a>",
         "title-2": "Memory Game",
-        "description-2": "This is a memory game inspired in the Scaloneta ⭐⭐⭐(Argentinian football national team). It uses figures from the Qtar 2022 World Cup album ",
+        "description-2": "This is a memory game inspired in the Scaloneta ⭐⭐⭐(Argentinian football national team). It uses figures from the Qtar 2022 World Cup album",
         "title-3": "Todo List",
         "description-3": "A simple todolist to take notes of your daily homeworks with the posibility to divide them in two types: business and personal. It implements LocalStorge to save what you wrote despite closing the window",
         "title-4": "Currency Converter",

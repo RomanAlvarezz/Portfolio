@@ -20,9 +20,7 @@ export default function form () {
                 $alert.innerHTML = json.message + ';)';
             } else {
                $alert.innerHTML = 'Tu mensaje ha sido enviado con éxito ;)'; 
-            }
-            console.log(json);
-            
+            }            
         })
         .catch(err => {
             console.log(err);

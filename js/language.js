@@ -2,7 +2,6 @@ const d = document;
 
 export default function language(){
     const $textsToChange = d.querySelectorAll('[data-section]');
-    //console.log($textsToChange);
 
     const changeLanguage = async language =>{
         const requestJson = await fetch(`./languages/${language}.json`);

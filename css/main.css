@@ -411,6 +411,7 @@ header {
   }
 }
 .home__buttons__resume {
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   text-transform: capitalize;
@@ -811,6 +812,7 @@ header {
   }
 }
 .about__image::before {
+  z-index: -1;
   content: "";
   position: absolute;
   width: 100%;
