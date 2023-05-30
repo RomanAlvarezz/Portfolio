@@ -135,8 +135,8 @@
         align-items: center;
         gap: 80px;
         transition: transform 200ms ease-in-out;
-        background-image: linear-gradient(to top, rgba(28, 31, 74, 0.75), rgba(23, 29, 64,0.75), rgba(19, 26, 55,0.75), rgba(16, 23, 46, 0.75), rgba(15, 20, 36, 0.75));
         backdrop-filter: blur(10px);
+        background-image: var(--header-filter); 
         -webkit-backdrop-filter: blur(10px);
         
 
