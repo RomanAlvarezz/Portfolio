@@ -19,7 +19,7 @@
     },
     "about": {
         "title": "sobre mí",
-        "description": "Hola, mi nombre es Román Alvarez y soy desarrollador Front End autodidacta situado en Argentina, Rosario. Mis primeras interacciones con código empezaron en mi último año de secundaria (2020), programando microcontroladores con Arduino, lo cual no me gustaba mucho, pero me dió curiosidad por la programación. En 2021 empecé a estudiar Ingeniería en Sistemas en la Universidad Tecnológica Nacional, donde adquirí conocimientos sobre algoritmos, programación estructurada y Python. Luego en 2022 comencé un bootcamp FullStack, donde aprendí tecnologías como Html, Css, Javascript, Sass, Figma y también a trabajar en equipo con metodologías agiles. No fue fácil mantener al día ambas carreras, pero me enseñó a distribuir mis tiempos en base a mis objetivos. Finalmente, en 2023 me cambie a la carrera de Análisis en Sistemas en el Instituto Politécnico Superior de Rosario. Actualmente estoy cursando mi carrera y aprendiendo programación web de forma autodidacta para conseguir mi primera oportunidad laboral en el mundo IT. "
+        "description": "Hola, mi nombre es Román Alvarez y soy desarrollador Front End autodidacta situado en Argentina, Rosario. Mis primeras interacciones con código empezaron en mi último año de secundaria (2020), programando microcontroladores con Arduino, lo cual no me gustaba mucho, pero me dió curiosidad por la programación. En 2021 empecé a estudiar Ingeniería en Sistemas en la Universidad Tecnológica Nacional, donde adquirí conocimientos sobre algoritmos, programación estructurada y Python. Luego en 2022 comencé un bootcamp FullStack, donde aprendí tecnologías como Html, Css, Javascript, Sass, Figma y también a trabajar en equipo con metodologías agiles. No fue fácil mantener al día ambas carreras, pero me enseñó a distribuir mis tiempos en base a mis objetivos. Finalmente, en 2023 me cambie a la carrera de Análisis en Sistemas en el Instituto Politécnico Superior de Rosario. "
     },
     "proyects":{
         "title": "Proyectos",
@@ -27,12 +27,12 @@
         "description-1": "La cocina de Linguini es una página de comidas para buscar recetas en base lo que tengas en tu heladera. Además podrás buscar alimentos dependiendo de difrentes carcterísticas como intolerancias, países, tipos y dietas. Esta hecha con la Api de <a href='https://spoonacular.com/food-api' target='_blank' class='proyects__card__link'>Spoonacular</a>",
         "title-2": "Juego de Memoria",
         "description-2": "Este es un juego de memoria inspirado en La Scaloneta⭐⭐⭐(selección de futbol argentina). Utiliza las figuritas del album de Qtar 2022",
-        "title-3": "Lista de Tareas",
-        "description-3": "Una simple lista de tareas para tomar nota sobre tus tareas diarias con la posibilidad de dividirlas en dos tipos: negocios y personales. Esta implementa LocalStorge para poder guardar lo que escribiste a pesar de cerrar la ventana",
-        "title-4": "Conversor de Monedas",
-        "description-4": "En esta aplicación puede ingresar una cantidad y convertir su moneda a la moneda de un país diferente. También puede cambiar o invertir fácilmente la moneda de los dos países. Esta hecha con la Api de <a class='proyects__card__link' href='http://www.exchangerate-api.com' target='_blank'>ExchangeRate</a> y tiene más de 100 monedas diferentes.",
-        "title-5": "Piedra Papel o Tijera",
-        "description-5": "Un juego de Piedra Papel o Tijera contra la máquina",
+        "title-3": "Localysta",
+        "description-3": "Localysta es una compañia que ofrece tours turísticos en España, esta página tiene la funcionalidad de reservar tours dependiendo del tipo que el cliente quiera elegir: tours de comida y tours de caminata",
+        "title-4": "Nerdconf",
+        "description-4": "Evento nómade y federal que reúne a especialistas en tecnología para inspirar a la comunidad nerd. Esta pagina tiene el objetivo de conectar con gente interesada en este tipo de eventos",
+        "title-5": "Capture",
+        "description-5": "Capture es una firma boutique independiente de gestión de inversiones que da un servicio integral. El objetivo de esta pagina es informar y conectar con gente intereada en este tipo de negocios",
         "title-6": "Calculadora JS",
         "description-6": "Calculadora para operaciones básicas"
     },
